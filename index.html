@@ -6,7 +6,11 @@
 </head>
 <body>
     <script>
-        Telegram.WebApp.ready();
+        try {
+            Telegram.WebApp.ready();
+        } catch {
+            window.Telegram.WebApp.ready();
+        }
         let data = window.Telegram.WebApp.initData;
         window.Telegram.WebApp.showAlert(`Data: ${data}`);
         alert(window.Telegram.WebApp)
