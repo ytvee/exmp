@@ -3,11 +3,12 @@
     <title>TWA</title>
     <meta charset="UTF-8">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script>
-        window.Telegram.WebApp.showAlert('Hey there!');
-    </script>
 </head>
 <body>
+    <script>
+        let data = window.Telegram.WebApp.initData;
+        window.Telegram.WebApp.showAlert(`Data: ${data}`);
+    </script>
     <h1>hello</h1>
 </body>
 </html>
