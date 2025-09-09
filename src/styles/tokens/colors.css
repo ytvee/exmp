@@ -1,0 +1,109 @@
+/* ========================================================================
+ * COLORS BASE TOKENS
+ * ====================================================================== */
+
+:root {
+  /* === Neutrals ======================================================= */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  /* Solid grays */
+  --color-gray-50:  #F9FAFB;
+  --color-gray-100: #F3F4F6;
+  --color-gray-200: #E5E7EB;
+  --color-gray-300: #D1D5DB;
+  --color-gray-400: #9CA3AF;
+  --color-gray-500: #6B7280;
+  --color-gray-600: #4B5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1F2937;
+  --color-gray-900: #111827;
+
+  /* Alpha / utility grays — !new */
+  --color-gray-alpha-87: rgba(0, 0, 0, 0.87); /* !new */
+  --color-gray-alpha-60: rgba(0, 0, 0, 0.60); /* !new */
+  --color-gray-alpha-38: rgba(0, 0, 0, 0.38); /* !new */
+  --color-gray-light:    #DDDDDD;             /* !new */
+  --color-gray-paper-3:  #E8ECF1;             /* !new */
+  --color-gray-paper-4:  #F3F6F8;             /* !new */
+
+  /* === Primary / Brand ============================================== */
+  --color-primary-50:  #F0F4FF;
+  --color-primary-100: #E0E9FF;
+  --color-primary-200: #C7D6FF;
+  --color-primary-300: #A4BCFF;
+  --color-primary-400: #7B9AFF;
+  --color-primary-500: #685DFF;
+  --color-primary-600: #4D38FF;
+  --color-primary-700: #3B2FD9;
+  --color-primary-800: #2F26B3;
+  --color-primary-900: #272096;
+
+  /* Brand synonyms — !new (kept for compatibility only) */
+  --color-brand-light: var(--color-primary-500); /* !new */
+  --color-brand-dark:  #403BFF;                  /* !new (close to primary‑600) */
+
+  /* === Status palette =============================================== */
+  --color-success:       #1DB549;
+  --color-success-light: #4ADE80;
+  --color-success-dark:  #16A34A;
+
+  --color-warning:       #FFCC00;
+  --color-warning-light: #FCD34D;
+  --color-warning-dark:  #F59E0B;
+
+  --color-error:         #D32F2F;
+  --color-error-light:   #F87171;
+  --color-error-dark:    #DC2626;
+
+  --color-info:          #2E6CF3;
+  --color-info-light:    #60A5FA;
+  --color-info-dark:     #2563EB;
+
+  /* Accent / secondary palette — !new */
+  --color-accent-purple: #9342F5; /* !new */
+  --color-accent-orange: #F75D16; /* !new */
+  --color-accent-yellow: #FFCC00; /* duplicate of --color-warning */
+  --color-accent-dyellow:#BE9800; /* !new */
+  --color-accent-red:    var(--color-error);   /* alias */
+  --color-accent-green:  var(--color-success); /* alias */
+  --color-accent-blue:   var(--color-info);    /* alias */
+
+  /* === Semantic tokens (text & surfaces) — !new ===================== */
+  /* Text on light surfaces */
+  --color-text-primary:   var(--color-gray-900);
+  --color-text-secondary: var(--color-gray-600);
+  --color-text-tertiary:  var(--color-gray-500); /* !new */
+  --color-text-disabled:  var(--color-gray-400);
+
+  /* Text on brand surfaces */
+  --color-text-inverse:           var(--color-white);
+  --color-text-inverse-secondary: rgba(255, 255, 255, 0.70); /* !new */
+  --color-text-inverse-disabled:  rgba(255, 255, 255, 0.38); /* !new */
+
+  /* Surfaces */
+  --color-surface-primary:   #FFFFFF;
+  --color-surface-secondary: #F9FAFB;
+  --color-surface-elevated:  var(--color-white); /* + shadow */
+  --color-surface-tertiary:  var(--color-gray-paper-3); /* !new */
+  --color-surface-quaternary:var(--color-gray-paper-4); /* !new */
+
+  /* === Gradients ==================================================== */
+  --gradient-primary: linear-gradient(15deg,
+  var(--color-primary-500) 17.16%,
+  var(--color-primary-600) 75%);
+
+  --gradient-gray:    linear-gradient(106deg,
+  rgba(255, 255, 255, 0.72) 6.03%,
+  rgba(255, 255, 255, 0.54) 41.45%,
+  rgba(242, 242, 242, 0.72) 93.37%);
+
+  /* Decorative gradients — !new */
+  --gradient-primary-alt:   linear-gradient(180deg, #6D5BFF 0%, #403BFF 100%); /* !new */
+  --gradient-neon-void:     linear-gradient(180deg, #620D92 0%, #3843E2 100%); /* !new */
+  --gradient-aqua-horizon:  linear-gradient(180deg, #4855DB 0%, #34E0E8 100%); /* !new */
+  --gradient-ether-glow:    linear-gradient(180deg, #6A50DF 0%, #F8A4E9 100%); /* !new */
+  --gradient-pulse-nova:    linear-gradient(180deg, #9C7CF4 0%, #F49782 100%); /* !new */
+  --gradient-aurora-vortex: linear-gradient(180deg, #F35D82 0%, #E32D2F 100%); /* !new */
+  --gradient-solar-ember:   linear-gradient(180deg, #B2335F 0%, #FAA682 100%); /* !new */
+}

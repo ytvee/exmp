@@ -1,0 +1,180 @@
+.asi-cryptoownercard {
+  --card-gap: var(--spacing-2);
+  --card-radius: var(--radius-lg);
+  --card-bg: var(--color-surface-primary);
+  --card-shadow: var(--shadow-md);
+
+  --card-padding-extended: var(--spacing-4);
+  --card-padding-lg: var(--spacing-6);
+
+  --card-lg-width: 324px;
+  --card-lg-height: 80px;
+
+  --avatar-size-base: 60px;
+  --avatar-size-lg: 80px;
+
+  --text-max-width: 213px;
+
+  --id-font-size-base: var(--font-size-24);
+  --id-font-size-lg: 28px;
+
+  --title-font-size-base: var(--font-size-18);
+  --title-font-size-lg: var(--font-size-24);
+
+  --desc-font-size-base: var(--font-size-16);
+  --desc-font-size-lg: 19px;
+
+  --desc-letter-spacing-base: -0.12px;
+  --desc-letter-spacing-lg: -0.75px;
+
+  --icon-size: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: var(--card-gap);
+
+  border-radius: var(--card-radius);
+  background: var(--card-bg);
+
+  box-shadow: var(--card-shadow);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.asi-cryptoownercard h1,
+.asi-cryptoownercard h2,
+.asi-cryptoownercard h3,
+.asi-cryptoownercard p {
+  margin: var(--spacing-0);
+  padding: var(--spacing-0);
+}
+
+.asi-cryptoownercard[data-cryptoownercard-variant="extended"] {
+  max-width: 355px;
+  max-height: 92px;
+  padding: var(--card-padding-extended);
+}
+
+.asi-cryptoownercard[data-cryptoownercard-variant="large"],
+.asi-cryptoownercard[data-cryptoownercard-variant="large-content"] {
+  width: var(--card-lg-width);
+  height: var(--card-lg-height);
+  padding: var(--card-padding-lg);
+}
+
+.asi-cryptoownercard-id-container {
+  display: flex;
+  align-items: center;
+}
+
+.asi-cryptoownercard-id-container h2 {
+  margin: var(--spacing-0);
+  color: var(--color-gray-alpha-87);
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-medium);
+  line-height: 132%;
+}
+
+.asi-cryptoownercard-id-container[data-cryptoownercard-variant="extended"] h2,
+.asi-cryptoownercard-id-container[data-cryptoownercard-variant="large"] h2 {
+  font-size: var(--id-font-size-base);
+}
+
+.asi-cryptoownercard-id-container[data-cryptoownercard-variant="large-content"] h2 {
+  font-size: var(--id-font-size-lg);
+}
+
+.asi-cryptoownercard-avatar-container[data-cryptoownercard-variant="extended"],
+.asi-cryptoownercard-avatar-container[data-cryptoownercard-variant="large"] {
+  min-width: var(--avatar-size-base);
+  max-width: var(--avatar-size-base);
+  min-height: var(--avatar-size-base);
+  max-height: var(--avatar-size-base);
+}
+
+.asi-cryptoownercard-avatar-container[data-cryptoownercard-variant="large-content"] {
+  min-width: var(--avatar-size-lg);
+  max-width: var(--avatar-size-lg);
+  min-height: var(--avatar-size-lg);
+  max-height: var(--avatar-size-lg);
+}
+
+.asi-cryptoownercard-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: var(--text-max-width);
+}
+
+.asi-cryptoownercard-text-container h3 {
+  max-width: 100%;
+  overflow: hidden;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  color: var(--color-gray-alpha-87);
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-medium);
+  line-height: 132%;
+}
+
+.asi-cryptoownercard-text-container[data-cryptoownercard-variant="extended"] h3,
+.asi-cryptoownercard-text-container[data-cryptoownercard-variant="large"] h3 {
+  font-size: var(--title-font-size-base);
+}
+
+.asi-cryptoownercard-text-container[data-cryptoownercard-variant="large-content"] h3 {
+  font-size: var(--title-font-size-lg);
+}
+
+.asi-cryptoownercard-text-description-container {
+  height: var(--icon-size);
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--card-gap);
+  max-width: var(--text-max-width);
+}
+
+.asi-cryptoownercard-text-description-container > div {
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
+
+.asi-cryptoownercard-text-description-container p {
+  max-width: 100%;
+  overflow: hidden;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  color: var(--color-gray-alpha-60);
+  font-family: var(--font-family-mono);
+  font-weight: var(--font-weight-normal);
+}
+
+.asi-cryptoownercard-text-description-container[data-cryptoownercard-variant="extended"] p,
+.asi-cryptoownercard-text-description-container[data-cryptoownercard-variant="large"] p {
+  font-size: var(--desc-font-size-base);
+  line-height: 122%;
+  letter-spacing: var(--desc-letter-spacing-base);
+}
+
+.asi-cryptoownercard-text-description-container[data-cryptoownercard-variant="large-content"] p {
+  font-size: var(--desc-font-size-lg);
+  line-height: 130%;
+  letter-spacing: var(--desc-letter-spacing-lg);
+}
+
+.asi-cryptoownercard--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: var(--bp-md)) {
+  .asi-cryptoownercard {
+  }
+}
+
+.asi-story-row {
+  display: flex;
+  gap: var(--spacing-4);
+  flex-wrap: wrap;
+  align-items: center;
+}

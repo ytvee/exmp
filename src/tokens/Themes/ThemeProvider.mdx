@@ -1,0 +1,32 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import * as ThemeProvider from './ThemeProvider.stories.tsx';
+
+<Meta of={ThemeProvider} title="ThemeProvider" />
+
+# ThemeProvider
+
+The `ThemeProvider` is used to change the theme between Dark and Light modes. It provides a context for managing the current theme and allows components to access the theme properties.
+
+## Usage
+
+Wrap your application with the `ThemeProvider` to enable theme switching:
+
+```jsx
+import { ThemeProvider } from './path/to/ThemeProvider';
+
+const App = () => (
+  <ThemeProvider>{/* Your application components */}</ThemeProvider>
+);
+```
+
+## Theme Switching
+
+You can toggle between themes using the `toggleTheme` function provided by the context:
+
+```jsx
+const { toggleTheme } = useTheme();
+```
+
+## Storybook Example
+
+See the [ThemeProvider stories](./ThemeProvider.stories.tsx) for examples of how to use the `ThemeProvider` in your components.

@@ -1,0 +1,105 @@
+/* Search Component Styles */
+.asi-search {
+  /* Base styles */
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  min-width: 228px;
+  border-radius: 8px;
+}
+
+.asi-search > .asi-search-input-wrapper {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 48px;
+  padding: 6px 0;
+
+  border-radius: 8px;
+  outline: 1px solid rgba(0, 0, 0, 0.10);
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  background: #FFFFFF;
+}
+
+.asi-search > .asi-search-input-wrapper:focus-within {
+  outline: 1px solid #4D38FF;
+  border: 1px solid #4D38FF;
+}
+
+.asi-search > .asi-search-input-wrapper > input {
+  box-sizing: border-box;
+  padding: 3px 96px 0 38px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.87);
+  text-overflow: ellipsis;
+
+  font-family: "Roboto Mono";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 130%; /* 18.2px */
+  letter-spacing: -0.105px;
+}
+
+.asi-search-input-wrapper > button {
+  position: absolute;
+  bottom: 5px;
+  right: 12px;
+
+  height: 36px;
+  padding: 8px 12px;
+  border-radius: 32px;
+  border: none;
+  color: white;
+  background: linear-gradient(15deg, #685DFF 17.16%, #4D38FF 75%);
+  cursor: pointer;
+}
+
+.asi-search-input-wrapper > button:hover {
+  background: #685DFF;
+}
+
+.asi-search-input-wrapper > button:focus {
+  background: linear-gradient(15deg, #685DFF 17.16%, #4D38FF 75%);
+  box-shadow: 0 0 0 4px rgba(77, 56, 255, 0.40);
+}
+
+.asi-search-input-wrapper > button:active {
+  background: rgba(77, 56, 255, 0.15);
+}
+
+.asi-search-input-wrapper > div {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+/* States */
+.asi-search--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.asi-search--loading {
+  /* Loading state styles */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .asi-search {
+    /* Mobile styles */
+  }
+}
+
+/* Storybook helper row for stories */
+.asi-story-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+} 

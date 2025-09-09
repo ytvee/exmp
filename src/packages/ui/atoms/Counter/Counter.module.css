@@ -1,0 +1,166 @@
+.asi-counter {
+  --counter-font-family: var(--font-family-mono);
+  --counter-font-size: var(--font-size-14);
+  --counter-font-style: normal;
+  --counter-font-weight: 400;
+  --counter-line-height: 130%;
+  --counter-letter-spacing: -0.105px;
+  --counter-color: var(--color-gray-alpha-60);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  
+  font-family: var(--counter-font-family);
+  font-size: var(--counter-font-size);
+  font-style: var(--counter-font-style);
+  font-weight: var(--counter-font-weight);
+  line-height: var(--counter-line-height);
+  letter-spacing: var(--counter-letter-spacing);
+  color: var(--counter-color);
+}
+
+.asi-counter-wrapper {
+  --counter-gap: var(--spacing-2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--counter-gap);
+}
+
+.asi-counter-display {
+  --display-width: 68px;
+  --display-height: 40px;
+  --display-radius: var(--radius-md);
+  --display-bg: var(--color-white);
+  --display-text-color: rgba(0, 0, 0, 0.60);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--display-width);
+  height: var(--display-height);
+  border-radius: var(--display-radius);
+  background: var(--display-bg);
+  text-align: center;
+  color: var(--display-text-color);
+}
+
+.asi-counter-button {
+  --btn-size: 40px;
+  --btn-radius: var(--radius-full);
+  --btn-border: 1px solid rgba(0, 0, 0, 0.10);
+  --btn-bg: var(--color-white);
+  --btn-cursor: pointer;
+  --btn-padding: 0;
+  --btn-transition: all 0.2s ease;
+  --btn-hover-bg: var(--color-gray-100);
+  --btn-disabled-cursor: not-allowed;
+  --btn-active-border-color: var(--color-border-focus);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--btn-size);
+  height: var(--btn-size);
+  border-radius: var(--btn-radius);
+  border: var(--btn-border);
+  background: var(--btn-bg);
+  cursor: var(--btn-cursor);
+  padding: var(--btn-padding);
+  transition: var(--btn-transition);
+}
+
+.asi-counter-button:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+.asi-counter-button:disabled {
+  cursor: var(--btn-disabled-cursor);
+  background: var(--color-background-tertiary);
+  color: var(--color-text-disabled);
+  border: none;
+}
+
+.asi-counter-button.active {
+  border-color: var(--btn-active-border-color);
+}
+
+.asi-counter-button.active:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+.asi-minus-icon,
+.asi-plus-icon {
+  --icon-display: inline-block;
+  --icon-position: relative;
+  --icon-bg: var(--color-text-disabled);
+  --icon-active-bg: var(--color-border-focus);
+
+  position: var(--icon-position);
+  display: var(--icon-display);
+}
+
+.asi-minus-icon {
+  --minus-width: 14px;
+  --minus-height: 2px;
+
+  width: var(--minus-width);
+  height: var(--minus-height);
+}
+
+.asi-minus-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--minus-width);
+  height: var(--minus-height);
+  background-color: var(--icon-bg);
+}
+
+.asi-minus-icon.active::before {
+  background-color: var(--icon-active-bg);
+}
+
+.asi-plus-icon {
+  --plus-size: 14px;
+  --plus-thickness: 2px;
+
+  width: var(--plus-size);
+  height: var(--plus-size);
+}
+
+.asi-plus-icon::before,
+.asi-plus-icon::after {
+  content: '';
+  position: absolute;
+  background-color: var(--icon-bg);
+}
+
+.asi-plus-icon::before {
+  top: 6px;
+  left: 0;
+  width: var(--plus-size);
+  height: var(--plus-thickness);
+}
+
+.asi-plus-icon::after {
+  top: 0;
+  left: 6px;
+  width: var(--plus-thickness);
+  height: var(--plus-size);
+}
+
+.asi-plus-icon.active::before,
+.asi-plus-icon.active::after {
+  background-color: var(--icon-active-bg);
+}
+
+.asi-story-row {
+  display: flex;
+  gap: var(--spacing-4);
+  flex-wrap: wrap;
+  align-items: center;
+}

@@ -1,0 +1,55 @@
+.asi-notification {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-3);
+  padding: var(--spacing-4);
+  border-radius: var(--radius-sm);
+
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+  backdrop-filter: blur(3px);
+}
+
+.asi-notification--info {
+  --color-info-transparent: color-mix(in srgb, var(--color-info) 20%, transparent);
+  background: var(--color-info-transparent);
+}
+
+.asi-notification--success {
+  --color-success-transparent: color-mix(in srgb, var(--color-success) 20%, transparent);
+  background: var(--color-success-transparent);
+}
+
+.asi-notification--warning {
+  --color-warning-transparent: color-mix(in srgb, var(--color-warning) 30%, transparent);
+  background: var(--color-warning-transparent);
+}
+
+.asi-notification--error {
+  --color-error-transparent: color-mix(in srgb, var(--color-error) 30%, transparent);
+  background: var(--color-error-transparent);
+}
+
+
+.asi-notification-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-2);
+}
+
+.asi-notification-title {
+  margin: var(--spacing-0);
+  font-weight: var(--font-weight-medium);
+}
+
+.asi-notification-link {
+  color: var(--color-info-border);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.asi-notification-link:hover {
+  text-decoration: underline;
+}

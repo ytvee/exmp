@@ -1,0 +1,30 @@
+/* =====================================================
+   BASE TOKENS BREAKPOINTS
+   ===================================================== */
+/* range = min-width, mobile-first logic. Tokens for media-queries   */
+:root {
+    --bp-sm:  576px;   /* Small:   ≥576  (mobile S-M)  */
+    --bp-md:  768px;   /* Medium:  ≥768  (tablet port) */
+    --bp-lg:  992px;   /* Large:   ≥992  (tablet land / small desktop) */
+    --bp-xl: 1200px;   /* X-Large: ≥1200 (default desktop) */
+    --bp-2xl: 1400px;  /* 2XL-ка:  ≥1400 (wide desktop) */
+}
+
+/* =====================================================
+   GRID — desktop & mobile
+   ===================================================== */
+/* Desktop (≥ 1200) — 12 col, margin 54, gutter 24       */
+:root {
+    --grid-desktop-cols:   12;
+    --grid-desktop-margin: 54px;
+    --grid-desktop-gutter: 24px;
+    --grid-desktop-width:  1512px;   /* whole container + margins */
+}
+
+/* Mobile (< 768) — 5 col, margin 16, gutter 12          */
+:root {
+    --grid-mobile-cols:    5;
+    --grid-mobile-margin:  16px;
+    --grid-mobile-gutter:  12px;
+    --grid-mobile-width:   320px;
+}

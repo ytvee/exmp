@@ -1,0 +1,134 @@
+.asi-textareagroup {
+    --textarea-group-display: flex;
+    --textarea-group-direction: column;
+    --textarea-group-justify: center;
+    --textarea-group-gap: 6px;
+
+    display: var(--textarea-group-display);
+    flex-direction: var(--textarea-group-direction);
+    justify-content: var(--textarea-group-justify);
+    gap: var(--textarea-group-gap);
+    box-sizing: border-box;
+}
+
+.asi-label {
+    --textarea-label-text-align: left;
+    --textarea-label-width: 100%;
+    --textarea-label-color: var(--color-text-secondary);
+    --textarea-label-font-family: var(--font-family-primary);
+    --textarea-label-font-size: var(--font-size-16);
+
+    display: block;
+    text-align: var(--textarea-label-text-align);
+    width: var(--textarea-label-width);
+    color: var(--textarea-label-color);
+    font-family: var(--textarea-label-font-family);
+    font-size: var(--textarea-label-font-size);
+}
+
+.asi-label--disabled {
+    --textarea-label-disabled-color: var(--color-text-disabled);
+    color: var(--textarea-label-disabled-color);
+}
+
+.asi-textarea {
+    --textarea-width: 100%;
+    --textarea-font-family: var(--font-family-mono);
+    --textarea-font-size: var(--font-size-16);
+    --textarea-font-weight: 400;
+    --textarea-line-height: 1.22;
+    --textarea-letter-spacing: -0.12px;
+    --textarea-padding: 10px var(--spacing-3);
+    --textarea-min-height: 120px;
+    --textarea-color: var(--color-text-primary);
+    --textarea-bg: var(--color-background-primary);
+    --textarea-border: 1px solid var(--color-text-disabled);
+    --textarea-radius: var(--radius-md, 8px);
+    --textarea-transition: border-color 0.2s;
+    --textarea-resize: vertical;
+    --textarea-outline: none;
+
+    width: var(--textarea-width);
+    font-family: var(--textarea-font-family);
+    font-size: var(--textarea-font-size);
+    font-weight: var(--textarea-font-weight);
+    line-height: var(--textarea-line-height);
+    letter-spacing: var(--textarea-letter-spacing);
+    padding: var(--textarea-padding);
+    min-height: var(--textarea-min-height);
+    color: var(--textarea-color);
+    background: var(--textarea-bg);
+    border: var(--textarea-border);
+    border-radius: var(--textarea-radius);
+    outline: var(--textarea-outline);
+    resize: var(--textarea-resize);
+    transition: var(--textarea-transition);
+}
+
+.asi-textarea--error {
+    --textarea-error-border: var(--color-error);
+    border-color: var(--textarea-error-border);
+}
+
+.asi-textarea--disabled {
+    --textarea-disabled-color: rgba(0, 0, 0, 0.6);
+    --textarea-disabled-border: rgba(0, 0, 0, 0.23);
+    --textarea-disabled-cursor: not-allowed;
+    --textarea-disabled-bg: var(--color-gray-100);
+
+    color: var(--textarea-disabled-color);
+    border-color: var(--textarea-disabled-border);
+    cursor: var(--textarea-disabled-cursor);
+    background: var(--textarea-disabled-bg);
+}
+
+.asi-textarea--error:focus {
+    --textarea-error-focus-border: var(--color-error);
+    border-color: var(--textarea-error-focus-border);
+}
+
+.asi-textarea:hover:not(:disabled) {
+    --textarea-hover-border: var(--color-gray-900);
+    border-color: var(--textarea-hover-border);
+}
+
+.asi-textarea::placeholder {
+    --textarea-placeholder-color: var(--color-text-secondary);
+    color: var(--textarea-placeholder-color);
+}
+
+.asi-textarea:disabled::placeholder {
+    --textarea-placeholder-disabled-color: var(--color-text-disabled);
+    color: var(--textarea-placeholder-disabled-color);
+}
+
+.asi-textarea:not(:disabled):focus::placeholder,
+.asi-textarea:not(:disabled):hover::placeholder {
+    --textarea-placeholder-active-color: var(--color-gray-900);
+    color: var(--textarea-placeholder-active-color);
+}
+
+.asi-helpertext {
+    --textarea-helper-margin-left: 14px;
+    --textarea-helper-color: var(--color-text-secondary);
+    --textarea-helper-font-size: var(--font-size-14);
+
+    display: block;
+    margin-left: var(--textarea-helper-margin-left);
+    text-align: left;
+    width: 100%;
+    color: var(--textarea-helper-color);
+    font-size: var(--textarea-helper-font-size);
+}
+
+.asi-helpertext--disabled {
+    --textarea-helper-disabled-color: var(--color-text-disabled);
+    color: var(--textarea-helper-disabled-color);
+}
+
+.asi-story-row {
+    display: flex;
+    gap: var(--spacing-4);
+    flex-wrap: wrap;
+    align-items: center;
+}

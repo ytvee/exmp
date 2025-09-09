@@ -1,0 +1,123 @@
+@import '../../../../styles/tokens/colors.css';
+@import '../../../../styles/tokens/spacing.css';
+@import '../../../../styles/tokens/typography.css';
+@import '../../../../styles/semantic/theme-light.css';
+@import '../../../../styles/semantic/theme-dark.css';
+
+/* MobilePageSwitch Component Styles */
+.asi-mobile-page-switch {
+  display: flex;
+  flex-direction: column;
+  width: 288px;
+  height: 44px;
+  background-color: transparent;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+/* States */
+.asi-mobile-page-switch--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.asi-mobile-page-switch__header {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Back Button */
+.asi-mobile-page-switch__back-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 56px;
+  height: 21px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 32px;
+}
+
+.asi-mobile-page-switch__back-icon {
+  width: 16px;
+  height: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.asi-mobile-page-switch__back-text {
+  font-family: var(--font-family-primary);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Home Button */
+.asi-mobile-page-switch__home-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 126px;
+  height: 37px;
+  padding: 8px 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 46px;
+  transition: all 0.2s ease;
+}
+
+.asi-mobile-page-switch__home-button:hover .asi-mobile-page-switch__home-text {
+  text-decoration: underline;
+}
+
+.asi-mobile-page-switch__home-button:disabled {
+  opacity: 0.5;
+}
+
+.asi-mobile-page-switch__home-text {
+  font-family: var(--font-family-primary);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: rgb(17, 24, 39);
+  transition: text-decoration 0.2s ease;
+}
+
+.asi-mobile-page-switch__home-arrow {
+  width: 16px;
+  height: 16px;
+  color: rgb(17, 24, 39);
+}
+
+/* Menu Button */
+.asi-mobile-page-switch__menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.asi-mobile-page-switch__menu-icon {
+  width: 16px;
+  height: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Storybook helper row for stories */
+.asi-story-row {
+  display: flex;
+  gap: var(--spacing-4);
+  flex-wrap: wrap;
+  align-items: center;
+}

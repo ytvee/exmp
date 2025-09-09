@@ -1,0 +1,102 @@
+@keyframes asi-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.asi-loader {
+  --loader-border-width-small: 4px;
+  --loader-border-width-large: 8px;
+  --loader-size-small: 40px;
+  --loader-size-large: 80px;
+  --loader-border-color: var(--color-gray-200);
+  --loader-border-color-active: var(--color-primary-600);
+  --loader-animation-duration: 1s;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.asi-loader--small {
+  --loader-border-width: var(--loader-border-width-small);
+  --loader-size: var(--loader-size-small);
+}
+
+.asi-loader--large {
+  --loader-border-width: var(--loader-border-width-large);
+  --loader-size: var(--loader-size-large);
+}
+
+.asi-loader__circle {
+  border-radius: 50%;
+  width: var(--loader-size);
+  height: var(--loader-size);
+  animation: asi-spin var(--loader-animation-duration) linear infinite;
+}
+
+.asi-loader__circle svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Варианты позиционирования */
+.asi-loader--inline {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+}
+
+.asi-loader--fixed {
+  position: fixed;
+  z-index: 9999;
+}
+
+/* Цветовые варианты */
+.asi-loader--primary .asi-loader__circle {
+  --loader-border-color-active: var(--color-primary-500);
+}
+
+.asi-loader--secondary .asi-loader__circle {
+  --loader-border-color-active: var(--color-gray-600);
+}
+
+.asi-loader--success .asi-loader__circle {
+  --loader-border-color-active: var(--color-success);
+}
+
+.asi-loader--warning .asi-loader__circle {
+  --loader-border-color-active: var(--color-warning);
+}
+
+.asi-loader--error .asi-loader__circle {
+  --loader-border-color-active: var(--color-error);
+}
+
+/* Состояния */
+.asi-loader:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Анимация при появлении */
+.asi-loader--fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

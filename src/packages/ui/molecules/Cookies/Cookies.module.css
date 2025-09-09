@@ -1,0 +1,37 @@
+.asi-cookies-banner {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-4);
+  gap: var(--spacing-4);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  max-width: 348px;
+  text-align: center;
+  background: linear-gradient(106deg, rgba(255,255,255,0.72) 6.03%, rgba(255,255,255,0.54) 41.45%, rgba(242,242,242,0.72) 93.37%);
+}
+
+.asi-cookies-title {
+  margin: 0;
+  padding: 0;
+  color: var(--color-text-primary);
+}
+
+.asi-cookies-description {
+  margin: 0;
+  padding: 0;
+  color: var(--color-text-primary);
+}
+
+.asi-cookies-buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-4);
+}
+
+/* Storybook helper row for stories */
+.asi-story-row {
+  display: flex;
+  gap: var(--spacing-4);
+  flex-wrap: wrap;
+  align-items: center;
+}

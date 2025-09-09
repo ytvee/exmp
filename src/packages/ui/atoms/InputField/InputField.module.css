@@ -1,0 +1,296 @@
+.asi-inputgroup {
+    --inputgroup-display: flex;
+    --inputgroup-direction: column;
+    --inputgroup-justify: center;
+    --inputgroup-gap: 6px;
+
+    --label-margin-bottom: 6px;
+    --label-text-align: left;
+    --label-width: 100%;
+    --label-color: var(--color-text-secondary);
+    --label-font-family: var(--font-family-mono);
+    --label-font-size: var(--font-size-14);
+
+    display: var(--inputgroup-display);
+    flex-direction: var(--inputgroup-direction);
+    justify-content: var(--inputgroup-justify);
+    gap: var(--inputgroup-gap);
+    box-sizing: border-box;
+}
+
+.asi-label {
+    display: block;
+    text-align: var(--label-text-align);
+    width: var(--label-width);
+    color: var(--label-color);
+    font-family: var(--label-font-family);
+    font-size: var(--label-font-size);
+}
+
+.asi-label--disabled {
+    --label-disabled-color: var(--color-text-disabled);
+    color: var(--label-disabled-color);
+}
+
+.asi-label__required {
+    --label-required-color: var(--color-error);
+    --label-required-margin-left: 0.1rem;
+
+    color: var(--label-required-color);
+    margin-left: var(--label-required-margin-left);
+}
+
+.asi-helpertext {
+    --helper-margin-top: 6px;
+    --helper-margin-left: 14px;
+    --helper-text-align: left;
+    --helper-width: 100%;
+    --helper-color: var(--color-text-disabled);
+    --helper-font-size: var(--font-size-14);
+
+    display: block;
+    margin-left: var(--helper-margin-left);
+    text-align: var(--helper-text-align);
+    width: var(--helper-width);
+    color: var(--helper-color);
+    font-size: var(--helper-font-size);
+}
+
+.asi-helpertext--disabled {
+    --helper-disabled-color: var(--color-text-disabled);
+    color: var(--helper-disabled-color);
+}
+
+.asi-helpertext--error {
+    --helper-error-color: var(--color-error);
+    color: var(--helper-error-color);
+}
+
+.asi-helpertext--success {
+    --helper-success-color: var(--color-success);
+    color: var(--helper-success-color);
+}
+
+.asi-belowtext {
+    --below-text-margin-top: var(--spacing-2);
+    --below-text-color: var(--color-text-secondary);
+    --below-text-font-size: var(--font-size-14);
+
+    margin-top: var(--below-text-margin-top);
+    color: var(--below-text-color);
+    font-size: var(--below-text-font-size);
+}
+
+.asi-inputwrapper {
+    --wrapper-position: relative;
+    --wrapper-display: flex;
+    --wrapper-align: center;
+
+    position: var(--wrapper-position);
+    display: var(--wrapper-display);
+    align-items: var(--wrapper-align);
+}
+
+.asi-inputwrapper--hasStartIcon input {
+    --input-padding-left: 44px;
+    padding-left: var(--input-padding-left);
+}
+
+.asi-inputwrapper--hasEndIcon input {
+    --input-padding-right: 40px;
+    padding-right: var(--input-padding-right);
+}
+
+.asi-input {
+    --input-width: 100%;
+    --input-font-family: var(--font-family-mono);
+    --input-font-size: var(--font-size-16);
+    --input-font-weight: 400;
+    --input-line-height: 1.22;
+    --input-letter-spacing: -0.12px;
+    --input-padding: 0 var(--spacing-3);
+    --input-height: 44px;
+    --input-color: var(--color-text-primary);
+    --input-bg: var(--color-background-primary);
+    --input-border-color: var(--input-field-border-color, rgba(0, 0, 0, 0.23));
+    --input-border: var(--input-field-border, 1px solid var(--input-border-color));
+    --input-radius: var(--radius-md, 8px);
+    --input-transition: border-color 0.2s;
+
+    width: var(--input-width);
+    font-family: var(--input-font-family);
+    font-size: var(--input-font-size);
+    font-weight: var(--input-font-weight);
+    line-height: var(--input-line-height);
+    letter-spacing: var(--input-letter-spacing);
+    padding: var(--input-padding);
+    height: var(--input-height);
+    color: var(--input-color);
+    background: var(--input-bg);
+    border: var(--input-border);
+    border-radius: var(--input-radius);
+    outline: none;
+    transition: var(--input-transition);
+}
+
+.asi-input--error {
+    --input-border-color: var(--color-error);
+}
+
+.asi-input--success {
+    --input-border-color: var(--color-success);
+}
+
+.asi-input--disabled {
+    --input-disabled-color: rgba(0, 0, 0, 0.6);
+    --input-border-color: rgba(0, 0, 0, 0.23);
+    --input-disabled-cursor: not-allowed;
+    --input-disabled-bg: var(--color-gray-100);
+
+    color: var(--input-disabled-color);
+    cursor: var(--input-disabled-cursor);
+    background: var(--input-disabled-bg);
+}
+
+.asi-input:focus {
+    --input-border-color: var(--color-gray-900);
+}
+
+.asi-input--error:focus {
+    --input-border-color: var(--color-error);
+}
+
+.asi-input:hover:not(:disabled):not(:focus) {
+    --input-border-color: var(--color-gray-900);
+}
+
+.asi-input::placeholder {
+    --placeholder-color: var(--color-text-secondary);
+    color: var(--placeholder-color);
+}
+
+.asi-input:disabled::placeholder {
+    --placeholder-disabled-color: var(--color-text-disabled);
+    color: var(--placeholder-disabled-color);
+}
+
+.asi-input:not(:disabled):focus::placeholder,
+.asi-input:not(:disabled):hover::placeholder {
+    --placeholder-active-color: var(--color-gray-900);
+    color: var(--placeholder-active-color);
+}
+
+.asi-iconwrapper {
+    --iconwrapper-top: 50%;
+    --iconwrapper-transform: translateY(-50%);
+    --iconwrapper-padding: var(--spacing-2);
+
+    position: absolute;
+    top: var(--iconwrapper-top);
+    transform: var(--iconwrapper-transform);
+    padding: var(--iconwrapper-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.asi-iconwrapper--start {
+    --iconwrapper-start-left: var(--spacing-3);
+    left: var(--iconwrapper-start-left);
+}
+
+.asi-iconwrapper--end {
+    --iconwrapper-end-right: 10px;
+    right: var(--iconwrapper-end-right);
+}
+
+.asi-iconwrapper--clickable {
+    --iconwrapper-clickable-cursor: pointer;
+    pointer-events: auto;
+    cursor: var(--iconwrapper-clickable-cursor);
+}
+
+.asi-iconwrapper:hover .asi-tooltip {
+    --tooltip-opacity: 1;
+    --tooltip-visibility: visible;
+    opacity: var(--tooltip-opacity);
+    visibility: var(--tooltip-visibility);
+}
+
+.asi-tooltip {
+    --tooltip-display: inline-flex;
+    --tooltip-padding: var(--spacing-3);
+    --tooltip-gap: 10px;
+    --tooltip-radius: var(--radius-sm);
+    --tooltip-bg: var(--color-background-primary);
+    --tooltip-shadow: 0px 1px 0px 0px rgba(0,0,0,0.03), 0px 6px 6px 0px rgba(0,0,0,0.05), 0px 10px 10px 0px rgba(0,0,0,0.05);
+    --tooltip-backdrop: blur(10px);
+    --tooltip-position-bottom: 130%;
+    --tooltip-transform: translateX(-50%);
+    --tooltip-opacity: 0;
+    --tooltip-visibility: hidden;
+    --tooltip-transition: opacity 0.2s;
+    --tooltip-zindex: 10;
+
+    display: var(--tooltip-display);
+    padding: var(--tooltip-padding);
+    justify-content: center;
+    align-items: center;
+    gap: var(--tooltip-gap);
+    border-radius: var(--tooltip-radius);
+    background: var(--tooltip-bg);
+    box-shadow: var(--tooltip-shadow);
+    backdrop-filter: var(--tooltip-backdrop);
+    position: absolute;
+    bottom: var(--tooltip-position-bottom);
+    left: 50%;
+    transform: var(--tooltip-transform);
+    white-space: nowrap;
+    opacity: var(--tooltip-opacity);
+    visibility: var(--tooltip-visibility);
+    transition: var(--tooltip-transition);
+    z-index: var(--tooltip-zindex);
+}
+
+.asi-tooltiparrow {
+    --arrow-width: var(--spacing-2);
+    --arrow-height: var(--spacing-2);
+    --arrow-bg: var(--color-background-primary);
+    --arrow-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --arrow-bottom: -4px;
+
+    position: absolute;
+    bottom: var(--arrow-bottom);
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: var(--arrow-width);
+    height: var(--arrow-height);
+    background-color: var(--arrow-bg);
+    box-shadow: var(--arrow-shadow);
+    z-index: -1;
+}
+
+.asi-buttonwrapper {
+    --btnwrapper-top: 50%;
+    --btnwrapper-transform: translateY(-50%);
+    --btnwrapper-right: var(--spacing-1);
+    --btnwrapper-padding: var(--spacing-1);
+
+    position: absolute;
+    top: var(--btnwrapper-top);
+    transform: var(--btnwrapper-transform);
+    right: var(--btnwrapper-right);
+    padding: var(--btnwrapper-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.asi-story-row {
+    display: flex;
+    gap: var(--spacing-4);
+    flex-wrap: wrap;
+    align-items: center;
+}

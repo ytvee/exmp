@@ -1,0 +1,106 @@
+.asi-statuschip {
+  --statuschip-bg: var(--color-surface-primary);
+  --statuschip-color: var(--color-text-primary);
+  --statuschip-border-radius: var(--radius-md, 8px);
+  --statuschip-padding: 7px 12px;
+  --statuschip-gap: 8px;
+  --statuschip-width: 113px;
+  --statuschip-font-size: 14px;
+  --statuschip-font-weight: 500;
+  --statuschip-icon-size: 16px;
+  --statuschip-button: none;
+
+  display: flex;
+  width: var(--statuschip-width);
+  height: var(--statuschip-height);
+  padding: var(--statuschip-padding);
+  justify-content: center;
+  align-items: center;
+  gap: var(--statuschip-gap);
+  flex-shrink: 0;
+  border-radius: var(--statuschip-border-radius);
+  background: var(--statuschip-bg);
+  box-sizing: border-box;
+  font-family: var(--font-family-primary);
+  font-size: var(--statuschip-font-size);
+  font-weight: var(--statuschip-font-weight);
+  line-height: 1;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: var(--statuschip-button)
+}
+
+.asi-statuschip--active {
+  --statuschip-bg: rgba(29, 181, 73, 0.20);
+  --statuschip-color: rgba(29, 181, 73, 1);
+}
+
+.asi-statuschip--rejected {
+  --statuschip-bg: rgba(211, 47, 47, 0.20);
+  --statuschip-color: rgba(211, 47, 47, 1);
+}
+
+.asi-statuschip--pending {
+  --statuschip-bg: rgba(255, 237, 167, 0.30);
+  --statuschip-color: rgba(190, 152, 0, 1);
+}
+
+.asi-statuschip--default {
+  --statuschip-bg: var(--color-gray-paper-4);
+  --statuschip-color: var(--color-text-secondary);
+}
+
+.asi-statuschip--private {
+  --statuschip-bg: var(--color-gray-paper-4);
+  --statuschip-color: var(--color-primary-600);
+}
+
+.asi-statuschip__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--statuschip-color);
+}
+
+.asi-statuschip__icon svg {
+  width: var(--statuschip-icon-size);
+  height: var(--statuschip-icon-size);
+  display: block;
+}
+
+.asi-statuschip__label {
+  display: flex;
+  align-items: center;
+  color: var(--statuschip-color);
+  font-family: inherit;
+  font-size: var(--statuschip-font-size);
+  font-weight: var(--statuschip-font-weight);
+  line-height: 1;
+}
+
+/* Hover states */
+.asi-statuschip:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm, 0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+/* Focus states */
+.asi-statuschip:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+/* Disabled state */
+.asi-statuschip:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.asi-story-row {
+  display: flex;
+  gap: var(--spacing-4);
+  flex-wrap: wrap;
+  align-items: center;
+}

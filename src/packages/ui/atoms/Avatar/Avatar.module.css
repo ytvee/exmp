@@ -1,0 +1,43 @@
+.asi-avatar {
+    border-radius: 50%;
+    background-color: var(--color-gray-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.asi-avatar--extraSmall {
+    width: var(--spacing-5);
+    height: var(--spacing-5);
+}
+
+.asi-avatar--small {
+    width: 28px;
+    height: 28px;
+}
+
+.asi-avatar--medium {
+    width: 60px;
+    height: 60px;
+}
+
+.asi-avatar--large {
+    width: 90px;
+    height: 90px;
+}
+
+.asi-avatar-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.asi-story-row {
+    display: flex;
+    gap: var(--spacing-4);
+    flex-wrap: wrap;
+    align-items: center;
+}

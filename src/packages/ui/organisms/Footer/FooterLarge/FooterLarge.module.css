@@ -1,0 +1,117 @@
+.asi-footer-wrapper {
+    background-color: var(--color-white);
+    padding: var(--spacing-8);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+    font-family: var(--font-family-mono);
+}
+
+.asi-footer-wrapper h3,
+.asi-footer-wrapper h4 {
+    margin: var(--spacing-0);
+}
+
+.asi-footer-content {
+    display: flex;
+    gap: var(--spacing-10);
+    justify-content: space-between;
+}
+
+
+.asi-footer-logo-column {
+    --max-logo-column-width: 270px;
+    --min-logo-column-width: 185px;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+    min-width: var(--min-logo-column-width);
+    max-width: var(--max-logo-column-width);
+}
+
+.asi-footer-logo-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.asi-footer-logo-group h3 {
+    font-size: var(--font-size-2xl);
+}
+
+.asi-footer-logo-sub-text {
+    font-size: var(--font-size-xs);
+}
+
+.asi-footer-email-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+}
+
+.asi-footer-nav {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-6);
+}
+
+.asi-footer-links-column {
+    --min-footer-link-column: 160px;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+    min-width: var(--min-footer-link-column);
+}
+
+.asi-footer-links-column-header {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+}
+
+.asi-footer-link {
+    text-decoration: none;
+    color: var(--color-text-primary);
+}
+
+
+.asi-footer-service-status {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.asi-footer-stripe {
+    background-color: var(--color-background-tertiary);
+    display: flex;
+    padding: var(--spacing-6) var(--spacing-5);
+    border-radius: var(--radius-lg);
+}
+
+.asi-footer-stripe a {
+    color: var(--color-text-primary);
+}
+
+  @media (max-width: 906px) {
+    .asi-footer-content {
+        transform: translateX(-25%);
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-2);
+    }
+
+    .asi-footer-content div {
+        justify-content: center;
+    }
+
+    .asi-footer-links-column {
+        align-items: center;
+    }
+
+    .asi-footer-nav {
+        flex-direction: column;
+    }
+}

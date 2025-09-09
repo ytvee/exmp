@@ -1,0 +1,171 @@
+.asi-iconbutton {
+  --iconbtn-size: 34px;
+  --iconbtn-bg: transparent;
+  --iconbtn-border: none;
+  --iconbtn-radius: 50%;
+  --iconbtn-color: var(--color-gray-600);
+  --iconbtn-hover-bg: var(--color-gray-100);
+  --iconbtn-hover-color: var(--color-gray-700);
+  --iconbtn-disabled-color: var(--color-gray-400);
+  --iconbtn-disabled-bg: transparent;
+  --iconbtn-transition: all 0.2s ease;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--iconbtn-size);
+  height: var(--iconbtn-size);
+  background: var(--iconbtn-bg);
+  border: var(--iconbtn-border);
+  border-radius: var(--iconbtn-radius);
+  color: var(--iconbtn-color);
+  cursor: pointer;
+  transition: var(--iconbtn-transition);
+  box-sizing: border-box;
+  outline: none;
+  padding: 0;
+}
+
+/* Size variants */
+.asi-iconbutton--large {
+  --iconbtn-size: 40px;
+}
+
+.asi-iconbutton--medium {
+  --iconbtn-size: 34px;
+}
+
+.asi-iconbutton--small {
+  --iconbtn-size: 28px;
+}
+
+/* Color variants */
+.asi-iconbutton--default {
+  --iconbtn-color: var(--color-gray-600);
+  --iconbtn-hover-color: var(--color-gray-700);
+  --iconbtn-disabled-color: var(--color-gray-400);
+}
+
+.asi-iconbutton--blue {
+  --iconbtn-color: var(--color-primary-500);
+  --iconbtn-hover-color: var(--color-primary-600);
+  --iconbtn-disabled-color: var(--color-primary-300);
+}
+
+.asi-iconbutton--red {
+  --iconbtn-color: var(--color-error-text);
+  --iconbtn-hover-color: var(--color-error-text);
+  --iconbtn-disabled-color: var(--color-error-light);
+}
+
+/* Background variants */
+.asi-iconbutton--with-background {
+  --iconbtn-bg: var(--color-gray-100);
+  --iconbtn-border: 1px solid var(--color-gray-300);
+  --iconbtn-hover-bg: var(--color-gray-200);
+}
+
+.asi-iconbutton--with-background.asi-iconbutton--blue {
+  --iconbtn-bg: var(--color-primary-50);
+  --iconbtn-border: 1px solid var(--color-primary-200);
+  --iconbtn-hover-bg: var(--color-primary-100);
+}
+
+.asi-iconbutton--with-background.asi-iconbutton--red {
+  --iconbtn-bg: var(--color-error-50);
+  --iconbtn-border: 1px solid var(--color-error-200);
+  --iconbtn-hover-bg: var(--color-error-100);
+}
+
+/* States */
+.asi-iconbutton--active {
+  --iconbtn-color: var(--color-gray-700);
+  --iconbtn-hover-color: var(--color-gray-800);
+}
+
+.asi-iconbutton--active.asi-iconbutton--blue {
+  --iconbtn-color: var(--color-primary-600);
+  --iconbtn-hover-color: var(--color-primary-700);
+}
+
+.asi-iconbutton--active.asi-iconbutton--red {
+  --iconbtn-color: var(--color-error-600);
+  --iconbtn-hover-color: var(--color-error-700);
+}
+
+.asi-iconbutton--disabled {
+  --iconbtn-color: var(--iconbtn-disabled-color);
+  --iconbtn-bg: var(--iconbtn-disabled-bg);
+  cursor: not-allowed;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.asi-iconbutton--disabled.asi-iconbutton--with-background {
+  --iconbtn-bg: var(--color-gray-50);
+  --iconbtn-border: 1px solid var(--color-gray-200);
+}
+
+.asi-iconbutton--disabled.asi-iconbutton--with-background.asi-iconbutton--blue {
+  --iconbtn-bg: var(--color-primary-25);
+  --iconbtn-border: 1px solid var(--color-primary-100);
+}
+
+.asi-iconbutton--disabled.asi-iconbutton--with-background.asi-iconbutton--red {
+  --iconbtn-bg: var(--color-error-25);
+  --iconbtn-border: 1px solid var(--color-error-100);
+}
+
+/* Hover effects */
+.asi-iconbutton:hover:not(.asi-iconbutton--disabled) {
+  background: var(--iconbtn-hover-bg);
+  color: var(--iconbtn-hover-color);
+}
+
+/* Focus states */
+.asi-iconbutton:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
+
+/* Icon sizing */
+.asi-iconbutton svg {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+
+.asi-iconbutton--large svg {
+  padding: 4px;
+}
+
+.asi-iconbutton--medium svg {
+  padding: 3px;
+}
+
+.asi-iconbutton--small svg {
+  padding: 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .asi-iconbutton {
+    --iconbtn-size: 32px;
+  }
+
+  .asi-iconbutton--large {
+    --iconbtn-size: 36px;
+  }
+
+  .asi-iconbutton--small {
+    --iconbtn-size: 24px;
+  }
+}
+
+/* Storybook helper row for stories */
+.asi-story-row {
+  display: flex;
+  gap: var(--spacing-4);
+  flex-wrap: wrap;
+  align-items: center;
+}

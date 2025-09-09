@@ -1,0 +1,85 @@
+.asi-codeblock {
+  --codeblock-display: flex;
+  --codeblock-width: 544px;
+  --codeblock-max-width: 100%;
+  --codeblock-min-height: 120px;
+  --codeblock-padding: var(--spacing-3);
+  --codeblock-border-radius: var(--radius-md);
+  --codeblock-border: 1px solid var(--color-gray-alpha-38);
+  --codeblock-background: var(--color-background-primary);
+  --codeblock-overflow-x: auto;
+
+  position: relative;
+  display: var(--codeblock-display);
+  width: var(--codeblock-width);
+  max-width: var(--codeblock-max-width);
+  min-height: var(--codeblock-min-height);
+  padding: var(--codeblock-padding);
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: var(--codeblock-border-radius);
+  border: var(--codeblock-border);
+  background: var(--codeblock-background);
+  overflow-x: var(--codeblock-overflow-x);
+}
+
+@media (max-width: var(--bp-md)) {
+  .asi-codeblock {
+    --codeblock-width: 100%;
+    width: var(--codeblock-width);
+  }
+}
+
+.asi-codeline {
+  --codeline-font-family: var(--font-family-mono);
+  --codeline-font-size: var(--font-size-16);
+  --codeline-font-style: normal;
+  --codeline-font-weight: 400;
+  --codeline-line-height: 122%;
+  --codeline-letter-spacing: -0.12px;
+  --codeline-white-space: pre;
+  --codeline-width: 100%;
+  --token-color: var(--color-text-tertiary);
+
+  font-family: var(--codeline-font-family);
+  font-size: var(--codeline-font-size);
+  font-style: var(--codeline-font-style);
+  font-weight: var(--codeline-font-weight);
+  line-height: var(--codeline-line-height);
+  letter-spacing: var(--codeline-letter-spacing);
+  white-space: var(--codeline-white-space);
+  width: var(--codeline-width);
+}
+
+.asi-codeline span {
+  color: var(--token-color);
+}
+
+.asi-codeblock__copy-button {
+  position: absolute;
+  right: 10px;
+}
+
+.asi-token--keyword {
+  --token-color: var(--color-error);
+}
+
+.asi-token--property {
+  --token-color: var(--color-primary-600);
+}
+
+.asi-token--string {
+  --token-color: var(--color-success);
+}
+
+.asi-token--number {
+  --token-color: var(--color-primary-600);
+}
+
+.asi-token--function {
+  --token-color: var(--color-primary-600);
+}
+
+.asi-token--plain {
+  --token-color: var(--color-text-tertiary);
+}

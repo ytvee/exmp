@@ -1,0 +1,42 @@
+.asi-overviewcard {
+    min-width: 280px;
+    max-width: 367px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+    padding: 16px;
+    border-radius: var(--radius-md);
+    background-color: var(--color-background-primary);
+    box-shadow: var(--shadow-md);
+
+    font-family: var(--font-family-primary);
+}
+
+.overviewcard-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+}
+
+.overviewcard-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    padding: 14px;
+}
+
+.overviewcard-icon-wrapper svg {
+    color: var(--color-background-primary)
+}
+
+.overviewcard-stats-list {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-8);
+}
+
+.overviewcard-buttons {
+    display: flex;
+    gap: var(--spacing-4);
+}

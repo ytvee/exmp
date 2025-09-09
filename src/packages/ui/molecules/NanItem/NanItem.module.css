@@ -1,0 +1,44 @@
+/* NanItem Component Styles */
+.asi-nanitem {
+  --nanitem-color: var(--color-text-secondary);
+  --nanitem-font-size: var(--font-size-base);
+
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  color: var(--nanitem-color);
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
+  max-width: 241px;
+  font-weight: 500;
+  font-size: var(--nanitem-font-size);
+  font-family: var(--font-family-primary);
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.asi-nanitem:hover {
+  --nanitem-color: var(--color-text-primary);
+ cursor: pointer;
+ background: var(--gradient-gray);
+}
+
+.asi-nanitem--checked, 
+.asi-nanitem--checked:hover {
+  --nanitem-color: var(--color-text-primary);
+ background: linear-gradient(90deg, #685DFF -32.42%, rgba(255, 255, 255, 0) 100%);
+;
+}
+
+.asi-nanitem--badge {
+  --color-info: var(--color-primary-600);
+}
+
+.asi-nanitem--button {
+  --line-h5-height: 120%;
+  --color-text-primary: var(--nanitem-color);
+  --font-size-sm: var(--nanitem-font-size);
+  align-items: center;
+}

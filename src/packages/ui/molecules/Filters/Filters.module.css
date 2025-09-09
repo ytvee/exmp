@@ -1,0 +1,188 @@
+@import '../../../../styles/tokens/colors.css';
+@import '../../../../styles/tokens/spacing.css';
+@import '../../../../styles/tokens/typography.css';
+@import '../../../../styles/semantic/theme-light.css';
+@import '../../../../styles/semantic/theme-dark.css';
+
+.asi-filters {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+  box-sizing: border-box;
+  min-height: 48px;
+}
+
+.asi-filters__search-bar {
+  width: 100%;
+  height: 48px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.asi-filters__search-bar label {
+  display: none;
+}
+
+.asi-filters__search-input {
+  font-size: var(--font-size-sm);
+  letter-spacing: var(--letter-spacing-sm);
+  line-height: var(--line-height-sm);
+  color: var(--color-text-disabled);
+  height: 48px;
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--radius-md);
+  background-color: var(--color-white);
+  transition: border-color 0.2s ease;
+}
+
+.asi-filters__search-input:focus {
+  outline: none;
+  border-color: var(--color-primary-500);
+}
+
+.asi-filters__search-input-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.asi-filters__search-icon {
+  position: absolute;
+  left: var(--spacing-3);
+  color: var(--color-text-secondary);
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.asi-filters__search-input {
+  width: 100%;
+  height: 100%;
+  padding-left: calc(var(--spacing-3) + 24px + var(--spacing-2));
+  padding-right: calc(80px + var(--spacing-2)); /* Space for filter button */
+}
+
+.asi-filters__tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+  align-items: center;
+}
+
+.asi-filters__clear-button:hover,
+.asi-filters__tag-clear:hover {
+  color: var(--color-text-primary);
+}
+
+.asi-filters__tag-clear {
+  cursor: pointer;
+}
+
+.asi-filters__clear-all-button {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: var(--spacing-2) var(--spacing-3);
+  height: 32px;
+  background-color: var(--color-primary-500);
+  border: 1px solid var(--color-primary-500);
+  border-radius: 32px;
+  font-size: var(--font-size-sm);
+  letter-spacing: var(--letter-spacing-sm);
+  line-height: var(--line-height-sm);
+  color: var(--color-white);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.asi-filters__clear-all-button:hover {
+  background-color: var(--color-primary-600);
+  border-color: var(--color-primary-600);
+}
+
+.asi-filters__clear-all-button:active {
+  background-color: var(--color-primary-700);
+  border-color: var(--color-primary-700);
+}
+
+.asi-filters__clear-all-button:focus {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
+
+.asi-filters__clear-all-icon {
+  width: 16px;
+  height: 16px;
+  color: var(--color-white);
+}
+
+.asi-filters__filter-button {
+  position: absolute;
+  right: var(--spacing-2);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: var(--spacing-2) var(--spacing-3);
+  height: 32px;
+  background-color: var(--color-primary-500);
+  border: 1px solid var(--color-primary-500);
+  border-radius: 32px;
+  font-size: var(--font-size-sm);
+  letter-spacing: var(--letter-spacing-sm);
+  line-height: var(--line-height-sm);
+  color: var(--color-white);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 2;
+}
+
+.asi-filters__filter-button:hover {
+  background-color: var(--color-primary-600);
+  border-color: var(--color-primary-600);
+}
+
+.asi-filters__filter-button:active {
+  background-color: var(--color-primary-700);
+  border-color: var(--color-primary-700);
+}
+
+.asi-filters__filter-button:focus {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
+
+.asi-filters__filter-button--active {
+  background-color: var(--color-primary-500);
+  border-color: var(--color-primary-500);
+  color: var(--color-white);
+}
+
+.asi-filters__filter-button--active .asi-filters__filter-button-icon {
+  color: var(--color-white);
+}
+
+.asi-filters__filter-button--active:hover {
+  background-color: var(--color-primary-600);
+  border-color: var(--color-primary-600);
+}
+
+.asi-filters__filter-button--active:focus {
+  outline: 2px solid var(--color-primary-700);
+  outline-offset: 2px;
+}
+
+.asi-filters__filter-button-icon {
+  width: 16px;
+  height: 16px;
+  color: var(--color-white);
+}

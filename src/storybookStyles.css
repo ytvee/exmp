@@ -1,0 +1,39 @@
+.asi-story-row {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.asi-story-column {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.asi-story-content {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.asi-story-box {
+    font-size: 12px;
+    padding: 8px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.asi-story-relative-conteiner {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.asi-story-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 24px;
+    max-width: 800px;
+    padding: 16px;
+}

@@ -1,0 +1,31 @@
+/* NavLink Component Styles */
+.asi-navlink {
+    /* Base styles */
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    padding-bottom: var(--spacing-1);
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-gray-alpha-60);
+    border-bottom: 1.5px solid transparent;
+}
+
+.asi-navlink:hover {
+    color: var(--color-gray-alpha-87);
+}
+
+.asi-navlink::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1.5px;
+    transition: background-color 0.3s ease;
+}
+
+.asi-navlink--active {
+    border-bottom: 1.5px solid var(--color-primary-500);
+    color: var(--color-text-primary);
+}

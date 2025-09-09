@@ -1,0 +1,130 @@
+/* TabSwitch Component Styles */
+.asi-tab-switch {
+  --tab-font-size: var(--font-size-lg);
+  --tab-switch-gap: var(--spacing-2);
+  --tab-switch-padding: 0 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+/* Variants */
+.asi-tab-switch--full {
+  width: 540px;
+}
+
+.asi-tab-switch--small {
+  --tab-font-size: var(--font-size-xs);
+  --tab-switch-gap: var(--spacing-1);
+  --tab-switch-padding: 0 16px;
+  width: 200px;
+}
+
+.asi-tab-switch--small svg {
+  width: var(--tab-font-size);
+  height: var(--tab-font-size);
+}
+
+.asi-tab-switch--mobile {
+  --tab-font-size: var(--font-size-xs);
+  width: 288px;
+}
+
+/* Color variants */
+.asi-tab-switch--primary {
+  --tab-border-color: var(--color-primary-600);
+  --tab-selected-bg: var(--color-primary-600);
+  --tab-selected-color: var(--color-white);
+}
+
+.asi-tab-switch--secondary {
+  --tab-border-color: var(--color-secondary-600);
+  --tab-selected-bg: var(--color-secondary-600);
+  --tab-selected-color: var(--color-white);
+}
+
+.asi-tab-switch--error {
+  --tab-border-color: var(--color-error-600);
+  --tab-selected-bg: var(--color-error-600);
+  --tab-selected-color: var(--color-white);
+}
+
+.asi-tab-switch--warning {
+  --tab-border-color: var(--color-warning-600);
+  --tab-selected-bg: var(--color-warning-600);
+  --tab-selected-color: var(--color-white);
+}
+
+/* States */
+.asi-tab-switch--disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.asi-tab-switch--loading {
+  position: relative;
+}
+
+.asi-tab-switch--loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.asi-tab-switch__container {
+  display: flex;
+  height: 38px;
+  border: 2px solid var(--tab-border-color, var(--color-primary-600));
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-white);
+  box-sizing: border-box;
+}
+
+.asi-tab-switch__tab {
+  --tab-background: transparent;
+
+  display: flex;
+  height: 100%;
+  padding: var(--tab-switch-padding);
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+  border: none;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: var(--tab-background);
+  color: var(--color-text-primary);
+  font-size: var(--tab-font-size);
+  font-weight: 500;
+  white-space: nowrap;
+  gap: var(--tab-switch-gap);
+}
+
+.asi-tab-switch__tab:hover {
+  --tab-background: var(--color-gray-100);
+}
+
+.asi-tab-switch__tab--active {
+  --tab-background: var(--color-primary-600);
+  color: var(--tab-selected-color, var(--color-white));
+}
+
+.asi-tab-switch__tab--active:hover {
+  --tab-background: var(--color-primary-700);
+}
+
+.asi-tab-switch__tab:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: var(--color-gray-100);
+}

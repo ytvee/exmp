@@ -1,0 +1,97 @@
+import type { Meta, StoryObj } from '@storybook/react';
+import { {{name}} } from './{{name}}';
+
+const meta: Meta<typeof {{name}}> = {
+  title: '{{type}}/{{name}}',
+  component: {{name}},
+  parameters: {
+    docs: {
+      description: {
+        component: '{{name}} component description',
+      },
+    },
+  },
+  argTypes: {
+    variant: {
+      control: { type: 'select' },
+      options: ['default', 'primary', 'secondary'],
+      description: 'Component variant',
+    },
+    size: {
+      control: { type: 'select' },
+      options: ['small', 'medium', 'large'],
+      description: 'Component size',
+    },
+    disabled: {
+      control: { type: 'boolean' },
+      description: 'Disabled state',
+    },
+    loading: {
+      control: { type: 'boolean' },
+      description: 'Loading state',
+    },
+  },
+};
+
+export default meta;
+type Story = StoryObj<typeof {{name}}>;
+
+export const Default: Story = {
+  args: {
+    children: '{{name}} Component',
+  },
+};
+
+export const Primary: Story = {
+  args: {
+    variant: 'primary',
+    children: 'Primary {{name}}',
+  },
+};
+
+export const Secondary: Story = {
+  args: {
+    variant: 'secondary',
+    children: 'Secondary {{name}}',
+  },
+};
+
+export const AllVariants: Story = {
+  render: () => {
+    const Component = {{name}};
+    return (
+      <div className="asi-story-row">
+        <Component variant="default">Default</Component>
+        <Component variant="primary">Primary</Component>
+        <Component variant="secondary">Secondary</Component>
+      </div>
+    );
+  },
+};
+
+export const AllSizes: Story = {
+  render: () => {
+    const Component = {{name}};
+    return (
+      <div className="asi-story-row">
+        <Component size="small">Small</Component>
+        <Component size="medium">Medium</Component>
+        <Component size="large">Large</Component>
+      </div>
+    );
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    disabled: true,
+    children: 'Disabled {{name}}',
+  },
+};
+
+export const Loading: Story = {
+  args: {
+    loading: true,
+    children: 'Loading {{name}}',
+  },
+}; 

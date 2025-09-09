@@ -1,0 +1,26 @@
+import React from 'react';
+import styles from './{{name}}.module.css';
+import { {{name}}Props } from './{{name}}.types';
+
+export const {{name}}: React.FC<{{name}}Props> = ({
+  children,
+  className,
+  ...props
+}) => {
+  const componentClasses = [
+    styles['asi-{{lowerCase name}}'],
+    className,
+  ].filter(Boolean).join(' ');
+
+  return (
+    <div 
+      className={componentClasses}
+      data-asi-component="{{lowerCase name}}"
+      {...props}
+    >
+      {children}
+    </div>
+  );
+};
+
+export default {{name}}; 

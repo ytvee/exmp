@@ -1,0 +1,152 @@
+.asi-typography {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+/* Variants */
+.asi-typography--h1 {
+  font-size: var(--font-size-3xl, 2.25rem);
+  font-weight: var(--font-weight-bold, 700);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.asi-typography--h2 {
+  font-size: var(--font-size-2xl, 1.875rem);
+  font-weight: var(--font-weight-bold, 700);
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+
+.asi-typography--h3 {
+  font-size: var(--font-size-xl, 1.25rem);
+  font-weight: var(--font-weight-semibold, 600);
+  line-height: 1.4;
+}
+
+.asi-typography--h4 {
+  font-size: var(--font-size-lg, 1.125rem);
+  font-weight: var(--font-weight-semibold, 600);
+  line-height: 1.4;
+}
+
+.asi-typography--h5 {
+  --line-h5-height: 1.5;
+
+  font-size: var(--font-size-base, 1rem);
+  font-weight: var(--font-weight-semibold, 600);
+  line-height: var(--line-h5-height);
+}
+
+.asi-typography--h6 {
+  font-size: var(--font-size-sm, 0.875rem);
+  font-weight: var(--font-weight-semibold, 600);
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.asi-typography--body1 {
+  font-size: var(--font-size-base, 1rem);
+  font-weight: var(--font-weight-normal, 400);
+  line-height: 1.6;
+}
+
+.asi-typography--body2 {
+  font-size: var(--font-size-sm, 0.875rem);
+  font-weight: var(--font-weight-normal, 400);
+  line-height: 1.6;
+}
+
+.asi-typography--body3 {
+  font-size: var(--font-size-xs, 0.75rem);
+  font-weight: var(--font-weight-normal, 400);
+  line-height: 1.6;
+}
+
+.asi-typography--body4 {
+  font-size: var(--font-size-xs, 0.75rem);
+  font-weight: var(--font-weight-medium, 500);
+  line-height: 1.6;
+}
+
+.asi-typography--caption {
+  font-size: var(--font-size-xs, 0.75rem);
+  font-weight: var(--font-weight-normal, 400);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.asi-typography--overline {
+  font-size: var(--font-size-xs, 0.75rem);
+  font-weight: var(--font-weight-medium, 500);
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Colors */
+.asi-typography--primary {
+  color: var(--color-text-primary);
+}
+
+.asi-typography--secondary {
+  color: var(--color-text-secondary);
+}
+
+.asi-typography--tertiary {
+  color: var(--color-text-tertiary);
+}
+
+.asi-typography--disabled {
+  color: var(--color-text-disabled);
+}
+
+.asi-typography--error {
+  color: var(--color-error);
+}
+
+.asi-typography--success {
+  color: var(--color-success);
+}
+
+.asi-typography--warning {
+  color: var(--color-warning);
+}
+
+.asi-typography--info {
+  color: var(--color-info);
+}
+
+.asi-typography--inverse {
+  color: var(--color-text-inverse);
+}
+
+.asi-typography--inverse-secondary {
+  color: var(--color-text-inverse-secondary);
+}
+
+.asi-typography--inverse-disabled {
+  color: var(--color-text-inverse-disabled);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .asi-typography--h1 {
+    font-size: var(--font-size-2xl, 1.875rem);
+  }
+
+  .asi-typography--h2 {
+    font-size: var(--font-size-xl, 1.25rem);
+  }
+
+  .asi-typography--h3 {
+    font-size: var(--font-size-lg, 1.125rem);
+  }
+
+  .asi-typography--h4 {
+    font-size: var(--font-size-base, 1rem);
+  }
+} 

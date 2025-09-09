@@ -1,0 +1,106 @@
+/* Icon Component Styles */
+.asi-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+/* Size variants */
+.asi-icon--xs {
+  width: 12px;
+  height: 12px;
+}
+
+.asi-icon--sm {
+  width: 16px;
+  height: 16px;
+}
+
+.asi-icon--md {
+  width: 20px;
+  height: 20px;
+}
+
+.asi-icon--lg {
+  width: 24px;
+  height: 24px;
+}
+
+.asi-icon--xl {
+  width: 32px;
+  height: 32px;
+}
+
+/* Interactive state */
+.asi-icon--clickable {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.asi-icon--clickable:hover {
+  opacity: 0.8;
+}
+
+.asi-icon--clickable:active {
+  opacity: 0.6;
+}
+
+/* SVG styles */
+.asi-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+/* Variants */
+.asi-icon--default {
+  /* Default variant styles */
+}
+
+.asi-icon--primary {
+  /* Primary variant styles */
+}
+
+.asi-icon--secondary {
+  /* Secondary variant styles */
+}
+
+/* Sizes */
+.asi-icon--small {
+  /* Small size styles */
+}
+
+.asi-icon--medium {
+  /* Medium size styles */
+}
+
+.asi-icon--large {
+  /* Large size styles */
+}
+
+/* States */
+.asi-icon--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.asi-icon--loading {
+  /* Loading state styles */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .asi-icon {
+    /* Mobile styles */
+  }
+}
+
+/* Storybook helper row for stories */
+.asi-story-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+} 

@@ -1,0 +1,140 @@
+/* CardAgent Component Styles */
+.asi-cardagent {
+  --ca-offset-top: 28px;
+  --ca-avatar-size: 111px;
+  --ca-prefix-padding-top: 50px;
+  --ca-width-init: 334px;
+  --ca-width-landing: 354px;
+  --ca-description-width-init: 299px;
+  --ca-description-width-landing: 317px;
+  --ca-stats-width-init: 299px;
+  --ca-stats-width-landing: 317px;
+  --ca-gap-xs: 6px;
+
+  position: relative;
+  top: var(--ca-offset-top);
+  padding: var(--spacing-4);
+  border-radius: var(--radius-lg);
+  background: var(--gradient-gray);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-image-slice: 1;
+  border-image: var(--gradient-gray) 0.4;
+  cursor: pointer;
+  display: block;
+  box-sizing: border-box;
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(10px);
+}
+
+.asi-cardagent__asi-cardagent[data-variant="init"] {
+  max-width: var(--ca-width-init);
+}
+
+.asi-cardagent__asi-cardagent[data-variant="landing"] {
+  max-width: var(--ca-width-landing);
+}
+
+.asi-cardagent__avatar-container {
+  position: absolute;
+  max-width: var(--ca-avatar-size);
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  user-select: none;
+  aspect-ratio: 1/1;
+}
+
+.asi-cardagent__content-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  border-radius: var(--radius-lg);
+}
+
+.asi-cardagent__prefix {
+  padding-top: var(--ca-prefix-padding-top);
+  text-align: center;
+  color: var(--color-gray-alpha-87);
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-12);
+  font-style: normal;
+  font-weight: var(--font-weight-normal);
+  line-height: 130%;
+  letter-spacing: -0.09px;
+}
+
+.asi-cardagent__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.asi-cardagent__text-container > .asi-cardagent__title > h3 {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-18);
+  color: var(--color-black);
+}
+
+.asi-cardagent__description {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  overflow: hidden;
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-12);
+  font-style: normal;
+  font-weight: var(--font-weight-normal);
+  line-height: 130%;
+  letter-spacing: -0.09px;
+}
+
+.asi-cardagent__description[data-variant="init"] {
+  max-width: var(--ca-description-width-init);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.asi-cardagent__description[data-variant="landing"] {
+  max-width: var(--ca-description-width-landing);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.asi-cardagent__stats-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.asi-cardagent__stats-container[data-variant="init"] {
+  min-width: var(--ca-stats-width-init);
+}
+
+.asi-cardagent__stats-container[data-variant="landing"] {
+  min-width: var(--ca-stats-width-landing);
+}
+
+.asi-cardagent__stat {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--spacing-2);
+}
+
+.asi-cardagent__stat-value {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-12);
+  font-weight: var(--font-weight-normal);
+}
+
+.asi-cardagent__asi-story-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}

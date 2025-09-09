@@ -1,0 +1,99 @@
+/* ===================================================================
+ * TYPOGRAPHY BASE TOKENS
+ * =================================================================== */
+
+:root {
+
+  /* === Font families ================================================= */
+  --font-family-primary: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-family-sans:    'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  --font-family-mono:    'Roboto Mono', 'SF Mono', Monaco, 'Cascadia Code', monospace;
+
+  /* === Font sizes ==================================================== */
+  /* From typography.module.css (rem‑based) */
+  --font-size-32: 2rem;      /* 32px */
+  --font-size-24: 1.5rem;    /* 24px */
+  --font-size-18: 1.125rem;  /* 18px */
+  --font-size-16: 1rem;      /* 16px */
+  --font-size-14: 0.875rem;  /* 14px */
+  --font-size-12: 0.75rem;   /* 12px */
+
+  /* From typography.css (px‑based scale) */
+  --font-size-xs:   12px;    /* alias of 12 */
+  --font-size-sm:   14px;
+  --font-size-base: 16px;
+  --font-size-lg:   18px;
+  --font-size-xl:   20px;
+  --font-size-2xl:  24px;    /* alias of 24 */
+  --font-size-3xl:  30px;
+  --font-size-4xl:  36px;
+  --font-size-5xl:  48px;
+  --font-size-6xl:  60px;
+
+  /* === Font weights ================================================== */
+  --font-weight-thin:       100;
+  --font-weight-light:      300;
+  --font-weight-normal:     400;
+  --font-weight-medium:     500;
+  --font-weight-semibold:   600;
+  --font-weight-bold:       700;
+  --font-weight-extrabold:  800;
+  --font-weight-black:      900;
+
+  /* === Line heights ================================================== */
+  --line-height-none:    1;
+  --line-height-tight:   1.2;
+  --line-height-normal:  1.5;
+  --line-height-relaxed: 1.8;
+
+  /* === Letter spacing / Tracking ===================================== */
+  --letter-spacing-tight:   -0.025em;
+  --letter-spacing-normal:  0em;
+  --letter-spacing-wide:    0.025em;
+  --letter-spacing-wider:   0.05em;
+  --letter-spacing-widest:  0.1em;
+
+  /* Aliases from typography.module.css */
+  --tracking-none:          0;           /* alias of letter-spacing-normal */
+  --tracking-tight:         -0.0075em;   /* specific narrow tracking */
+
+  /* === Semantic tokens =============================================== */
+  /* Headlines */
+  --headline1-font-family: var(--font-family-sans);
+  --headline1-font-size:   var(--font-size-32);
+  --headline1-letter:      var(--tracking-none);
+
+  --headline2-font-family: var(--font-family-sans);
+  --headline2-font-size:   var(--font-size-24);
+  --headline2-letter:      var(--tracking-none);
+
+  --headline3-font-family: var(--font-family-sans);
+  --headline3-font-size:   var(--font-size-18);
+  --headline3-letter:      var(--tracking-none);
+
+  --headline4-font-family: var(--font-family-sans);
+  --headline4-font-size:   var(--font-size-16);
+  --headline4-letter:      var(--tracking-none);
+
+  --headline5-font-family: var(--font-family-sans);
+  --headline5-font-size:   var(--font-size-14);
+  --headline5-letter:      var(--tracking-none);
+
+  /* Body text */
+  --body1-font-family: var(--font-family-mono);
+  --body1-font-size:   var(--font-size-18);
+  --body1-letter:      var(--tracking-tight);
+
+  --body2-font-family: var(--font-family-mono);
+  --body2-font-size:   var(--font-size-16);
+  --body2-letter:      var(--tracking-tight);
+
+  --body3-font-family: var(--font-family-mono);
+  --body3-font-size:   var(--font-size-14);
+  --body3-letter:      var(--tracking-tight);
+
+  --body4-font-family: var(--font-family-mono);
+  --body4-font-size:   var(--font-size-12);
+  --body4-letter:      var(--tracking-tight);
+}
+

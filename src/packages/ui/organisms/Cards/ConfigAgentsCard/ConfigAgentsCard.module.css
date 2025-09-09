@@ -1,0 +1,83 @@
+.asi-config-agents-card {
+  --image-title-color: var(--color-primary-500);
+
+  /* Base styles */
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: var(--radius-lg, 10px);
+  font-family: var(--font-family-mono);
+
+  /* Shadow-Blur-Subtle/md */
+  box-shadow: var(--shadow-md);
+  max-width: 367px;
+  background: var(--color-background-primary);
+  padding: var(--spacing-4, 16px);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4, 16px);
+  justify-content: space-between;
+}
+
+.config-agents-card-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4, 16px);
+}
+
+.config-agents-card-body__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3, 14px);
+}
+
+
+.config-agents-card-cover-image,
+.config-agents-card-cover-image img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 156px;
+
+  display: block;
+  object-fit: cover;
+  border-radius: var(--radius-sm, 4px);
+}
+
+.config-agents-card-cover__image-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  cursor: pointer;
+  word-break: break-word;
+  backdrop-filter: blur(1.5px);
+  background: rgba(219, 215, 255, 0.16);
+  color: var(--image-title-color);
+  border-radius: var(--radius-sm, 4px);
+}
+
+.config-agents-card-body-description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 400;
+}
+
+.config-agents-card-body-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var('--spacing-3', 8px);
+}

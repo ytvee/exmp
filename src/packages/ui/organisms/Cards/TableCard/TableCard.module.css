@@ -1,0 +1,56 @@
+.asi-tablecard {
+  /* Base styles */
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: var(--radius-md);
+
+  padding: 16px;
+  background: var(--color-background-primary);
+  box-shadow: var(--box-shadow-md);
+
+  min-width: 280px;
+  max-width: 367px;
+}
+
+.tablecard-main-content,
+.tablecard-additional-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.tablecard-header {
+  display: flex;
+  gap: var(--spacing-3);
+  align-items: center;
+}
+
+.tablecard-header-title {
+  display: flex;
+  gap: var(--spacing-2);
+  flex-direction: column;
+}
+
+.tablecard-header-info {
+  display: flex;
+  gap: var(--spacing-2);
+  align-items: stretch;
+}
+
+.tablecard-buttons-panel {
+  display: flex;
+  gap: 8px;
+}
+
+.tablecard-table table {
+  width: 100%;
+}
+
+.tablecard-body-buttons {
+  display: flex;
+  gap: var(--spacing-2);
+}

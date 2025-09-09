@@ -1,0 +1,199 @@
+@import '../../../../styles/tokens/colors.css';
+@import '../../../../styles/tokens/spacing.css';
+@import '../../../../styles/tokens/typography.css';
+@import '../../../../styles/semantic/theme-light.css';
+@import '../../../../styles/semantic/theme-dark.css';
+
+.asi-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: var(--spacing-4);
+  box-sizing: border-box;
+}
+
+/* Modal Container */
+.asi-modal {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: 
+    0px 8px 10px rgba(0, 0, 0, 0.2),
+    0px 6px 30px rgba(0, 0, 0, 0.12),
+    0px 16px 24px rgba(0, 0, 0, 0.14);
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Modal Sizes */
+.asi-modal--small {
+  width: 418px;
+  min-width: 320px;
+}
+
+.asi-modal--medium {
+  width: 660px;
+  min-width: 480px;
+}
+
+.asi-modal--large {
+  width: 800px;
+  min-width: 600px;
+}
+
+/* Modal States */
+.asi-modal--disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.asi-modal--loading {
+  position: relative;
+}
+
+.asi-modal--loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  z-index: 1;
+}
+
+/* Header */
+.asi-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: var(--spacing-6) var(--spacing-6) var(--spacing-4) var(--spacing-6);
+  border-bottom: 1px solid var(--color-gray-200);
+  flex-shrink: 0;
+}
+
+.asi-modal__title {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-xl);
+  color: var(--color-text-primary);
+  margin: 0;
+  flex: 1;
+  padding-right: var(--spacing-4);
+}
+
+.asi-modal__close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--spacing-2);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.asi-modal__close-button:hover {
+  background-color: var(--color-gray-100);
+}
+
+.asi-modal__close-button:focus {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
+
+.asi-modal__close-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.asi-modal__close-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--color-text-secondary);
+}
+
+/* Description */
+.asi-modal__description {
+  padding: 0 var(--spacing-6) var(--spacing-4) var(--spacing-6);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-base);
+  color: var(--color-text-secondary);
+  flex-shrink: 0;
+}
+
+/* Content */
+.asi-modal__content {
+  padding: var(--spacing-6);
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+/* Footer */
+.asi-modal__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-3);
+  padding: var(--spacing-4) var(--spacing-6) var(--spacing-6) var(--spacing-6);
+  border-top: 1px solid var(--color-gray-200);
+  flex-shrink: 0;
+}
+
+.asi-modal__action-button {
+  min-width: 80px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .asi-modal-overlay {
+    padding: var(--spacing-2);
+  }
+  
+  .asi-modal--small,
+  .asi-modal--medium,
+  .asi-modal--large {
+    width: 100%;
+    min-width: unset;
+  }
+  
+  .asi-modal__header {
+    padding: var(--spacing-4);
+  }
+  
+  .asi-modal__description {
+    padding: 0 var(--spacing-4) var(--spacing-3) var(--spacing-4);
+  }
+  
+  .asi-modal__content {
+    padding: var(--spacing-4);
+  }
+  
+  .asi-modal__footer {
+    padding: var(--spacing-3) var(--spacing-4) var(--spacing-4) var(--spacing-4);
+    flex-direction: column;
+  }
+  
+  .asi-modal__action-button {
+    width: 100%;
+  }
+}

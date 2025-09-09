@@ -1,0 +1,65 @@
+/* Level 2: Semantic tokens for dark theme */
+[data-theme="dark"] {
+  /* Layout semantic tokens */
+  --color-background-primary: var(--color-gray-900);
+  --color-background-secondary: var(--color-gray-800);
+  --color-background-tertiary: var(--color-gray-700);
+
+  --color-surface-primary: var(--color-gray-800);
+  --color-surface-secondary: var(--color-gray-700);
+  --color-surface-elevated: var(--color-gray-800);
+
+  --color-text-primary: var(--color-gray-100);
+  --color-text-secondary: var(--color-gray-300);
+  --color-text-tertiary: var(--color-gray-400);
+  --color-text-disabled: var(--color-gray-500);
+
+  --color-border-primary: var(--color-gray-700);
+  --color-border-secondary: var(--color-gray-600);
+  --color-border-focus: var(--color-primary-400);
+
+  /* Component semantic tokens */
+  --color-button-primary-bg: var(--color-primary-500);
+  --color-button-primary-text: var(--color-white);
+  --color-button-primary-hover: var(--color-primary-400);
+
+  --color-button-secondary-bg: var(--color-gray-700);
+  --color-button-secondary-text: var(--color-gray-100);
+  --color-button-secondary-hover: var(--color-gray-600);
+  --color-button-secondary-border: var(--color-gray-600);
+
+  --color-button-outline-bg: transparent;
+  --color-button-outline-text: var(--color-primary-400);
+  --color-button-outline-border: var(--color-primary-400);
+  --color-button-outline-hover: rgba(104, 93, 255, 0.1);
+
+  --color-input-bg: var(--color-gray-800);
+  --color-input-border: var(--color-gray-600);
+  --color-input-focus: var(--color-primary-400);
+  --color-input-text: var(--color-gray-100);
+  --color-input-placeholder: var(--color-gray-400);
+
+  --color-card-bg: var(--color-gray-800);
+  --color-card-border: var(--color-gray-700);
+  --color-card-shadow: var(--shadow-lg);
+
+  --color-modal-bg: var(--color-gray-800);
+  --color-modal-overlay: rgba(0, 0, 0, 0.7);
+
+  /* Status colors */
+  --color-success-bg: rgba(29, 181, 73, 0.2);
+  --color-success-text: var(--color-success-light);
+  --color-success-border: var(--color-success);
+
+  --color-warning-bg: rgba(255, 204, 0, 0.2);
+  --color-warning-text: var(--color-warning-light);
+  --color-warning-border: var(--color-warning);
+
+  --color-error-bg: rgba(211, 47, 47, 0.2);
+  --color-error-text: var(--color-error-light);
+  --color-error-border: var(--color-error);
+
+  --color-info-bg: rgba(46, 108, 243, 0.2);
+  --color-info-text: var(--color-info-light);
+  --color-info-border: var(--color-info);
+} 

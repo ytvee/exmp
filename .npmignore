@@ -1,0 +1,8 @@
+# .npmignore
+.github/
+.storybook/
+.vscode
+*.md
+*.yml
+*.json
+src/

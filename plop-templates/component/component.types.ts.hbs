@@ -1,0 +1,21 @@
+import React from 'react';
+
+export interface {{name}}Props extends React.HTMLAttributes<HTMLDivElement> {
+  /** Content to be rendered inside the component */
+  children?: React.ReactNode;
+  
+  /** Additional CSS class name */
+  className?: string;
+  
+  /** Variant of the component */
+  variant?: 'default' | 'primary' | 'secondary';
+  
+  /** Size of the component */
+  size?: 'small' | 'medium' | 'large';
+  
+  /** Whether the component is disabled */
+  disabled?: boolean;
+  
+  /** Whether the component is in loading state */
+  loading?: boolean;
+} 

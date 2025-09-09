@@ -1,0 +1,7 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="Loader">
+        <path id="Choose Circle Size"
+              d="M40 3C60.4345 3 77 19.5655 77 40C77 60.4345 60.4345 77 40 77C19.5655 77 3 60.4345 3 40C3 19.5655 19.5655 3 40 3Z"
+              stroke="#8EE383" stroke-width="6" stroke-linejoin="round"/>
+    </g>
+</svg>

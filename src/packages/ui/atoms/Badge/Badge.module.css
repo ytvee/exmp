@@ -1,0 +1,109 @@
+.asi-badge {
+    --badge-border-radius: var(--radius-full);
+    --badge-background: var(--color-surface-primary);
+    --badge-padding: var(--spacing-1) var(--spacing-3);
+    --badge-line-height: var(--line-height-tight);
+    --badge-gap: var(--spacing-4);
+    --badge-disabled-opacity: 0.5;
+    --badge-disabled-cursor: not-allowed;
+    --badge-font-size: var(--font-size-14);
+    --badge-color: var(--color-text-inverse);
+
+    box-sizing: border-box;
+    height: min-content;
+    width: max-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--badge-gap);
+
+    border-radius: var(--badge-border-radius);
+    padding: var(--badge-padding);
+    
+    line-height: var(--badge-line-height);
+    font-family: var(--font-family-mono);
+    font-size: var(--badge-font-size);
+    color: var(--badge-color);
+    background: var(--badge-background);
+}
+
+.asi-badge--small {
+  --badge-padding: var(--spacing-2) var(--spacing-3);
+  min-width: 23.41px;
+  min-height: 28.2px;
+}
+
+.asi-badge--small.asi-badge--double-digit {
+  min-width: 31.81px;
+  min-height: 28.2px;
+}
+
+.asi-badge--medium {
+  --badge-padding: var(--spacing-2) var(--spacing-4);
+  min-width: 32.41px;
+  min-height: 28.2px;
+}
+
+.asi-badge--medium.asi-badge--double-digit {
+  min-width: 40.81px;
+  min-height: 28.2px;
+}
+
+.asi-badge--large {
+  --badge-padding: var(--spacing-4) var(--spacing-6);
+  min-width: 40.41px;
+  min-height: 34.2px;
+}
+
+.asi-badge--large.asi-badge--double-digit {
+  min-width: 48.81px;
+  min-height: 34.2px;
+}
+
+.asi-badge--blue {
+    --badge-background: rgb(46, 108, 243);
+    --badge-color: var(--color-text-inverse);
+}
+
+.asi-badge--red {
+    --badge-background: var(--color-error);
+    --badge-color: var(--color-text-inverse);
+}
+
+.asi-badge--green {
+    --badge-background: var(--color-success);
+    --badge-color: var(--color-text-inverse);
+}
+
+.asi-badge--purple {
+    --badge-background: var(--color-accent-purple);
+    --badge-color: var(--color-text-inverse);
+}
+
+.asi-badge--gray {
+    --badge-background: rgb(243, 244, 246);
+    --badge-color: var(--color-text-primary);
+}
+
+.asi-badge__text {
+    --badge-text-min-width: var(--spacing-2);
+    --badge-text-height: var(--spacing-6);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.asi-badge--disabled {
+    opacity: var(--badge-disabled-opacity);
+    cursor: var(--badge-disabled-cursor);
+}
+
+.asi-story-row {
+    display: flex;
+    gap: var(--spacing-4);
+    flex-wrap: wrap;
+    align-items: center;
+}

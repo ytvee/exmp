@@ -1,0 +1,45 @@
+/* Author Component Styles */
+.asi-author {
+    /* Base styles */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--spacing-2);
+    color: var(--color-gray-alpha-87);
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-12);
+    font-style: normal;
+    font-weight: var(--font-weight-normal);
+    line-height: 130%;
+    letter-spacing: -0.09px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.author-create-at-container {
+    display: flex;
+    gap: var(--ca-gap-xs);
+    margin-left: auto;
+    align-items: center;
+    gap: 8px;
+}
+
+.author-create-at-container * {
+    color: rgba(0, 0, 0, 0.60);
+    fill: rgba(0, 0, 0, 0.60);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .asi-author {
+        /* Mobile styles */
+    }
+}
+
+/* Storybook helper row for stories */
+.asi-story-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+} 

@@ -1,0 +1,47 @@
+import React from 'react';
+import '@testing-library/jest-dom';
+import { render, screen } from '@testing-library/react';
+import { {{name}} } from '../{{name}}';
+
+describe('{{name}}', () => {
+  it('renders correctly', () => {
+    render(<{{name}}>Test Content</{{name}}>);
+    expect(screen.getByText('Test Content')).toBeInTheDocument();
+  });
+
+  it('applies variant class correctly', () => {
+    render(<{{name}} variant="primary">Test</{{name}}>);
+    const element = screen.getByText('Test');
+    expect(element).toHaveClass('asi-{{lowerCase name}}--primary');
+  });
+
+  it('applies size class correctly', () => {
+    render(<{{name}} size="large">Test</{{name}}>);
+    const element = screen.getByText('Test');
+    expect(element).toHaveClass('asi-{{lowerCase name}}--large');
+  });
+
+  it('applies disabled state correctly', () => {
+    render(<{{name}} disabled>Test</{{name}}>);
+    const element = screen.getByText('Test');
+    expect(element).toHaveClass('asi-{{lowerCase name}}--disabled');
+  });
+
+  it('applies loading state correctly', () => {
+    render(<{{name}} loading>Test</{{name}}>);
+    const element = screen.getByText('Test');
+    expect(element).toHaveClass('asi-{{lowerCase name}}--loading');
+  });
+
+  it('applies custom className', () => {
+    render(<{{name}} className="custom-class">Test</{{name}}>);
+    const element = screen.getByText('Test');
+    expect(element).toHaveClass('custom-class');
+  });
+
+  it('has correct data attribute', () => {
+    render(<{{name}}>Test</{{name}}>);
+    const element = screen.getByText('Test');
+    expect(element).toHaveAttribute('data-asi-component', '{{lowerCase name}}');
+  });
+}); 
