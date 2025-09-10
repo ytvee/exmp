@@ -4,14 +4,14 @@ import { vi } from 'vitest';
 import { Footer } from '../Footer';
 
 // Mock the useIsMobile hook
-vi.mock('../../../../../utils/responsiveHooks/useIsMobile', () => ({
+vi.mock('@utils/responsiveHooks/useIsMobile', () => ({
   useIsMobile: vi.fn(() => false),
   default: vi.fn(() => false),
 }));
 
 // Mock the DropDown component
 
-vi.mock('../../../molecules/DropDown', () => ({
+vi.mock('@molecules/DropDown', () => ({
   DropDown: vi.fn(() => <div data-testid="dropdown">Mocked DropDown</div>),
   SelectOption: vi.fn(),
 }));

@@ -1,6 +1,6 @@
 import React from 'react';
-import { lightTheme } from './../tokens/Themes/Theme';
-import Typography from '../tokens/Typography/Typography';
+import { lightTheme } from '@tokens/Themes/Theme';
+import Typography from '@tokens/Typography/Typography';
 
 export const SectionTitle = (props: { children: React.ReactNode }) => {
   return (

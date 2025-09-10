@@ -1,9 +1,9 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { TabSwitch } from './TabSwitch';
-import Icon from '../../atoms/Icon/Icon';
+import Icon from '@atoms/Icon/Icon';
 import { useState } from 'react';
-import '../../../../storybookStyles.css';
+import '@/storybookStyles.css';
 
 const meta: Meta<typeof TabSwitch> = {
   title: 'molecules/TabSwitch',

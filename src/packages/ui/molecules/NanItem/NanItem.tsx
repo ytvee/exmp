@@ -1,15 +1,15 @@
 import React from 'react';
 import styles from './NanItem.module.css';
 import { NanItemProps } from './NanItem.types';
-import { Badge } from '../../atoms/Badge';
-import { Icon } from '../../atoms/Icon';
+import { Badge } from '@atoms/Badge';
+import { Icon } from '@atoms/Icon';
 // Utility function moved inline
 const truncateLabel = (label: string, maxLength: number): string => {
   return label.length > maxLength ? `${label.slice(0, maxLength)}...` : label;
 };
-import { CheckBox } from '../../atoms/CheckBox';
-import { RadioButton } from '../../atoms/RadioButton';
-import { Avatar } from '../../atoms/Avatar';
+import { CheckBox } from '@atoms/CheckBox';
+import { RadioButton } from '@atoms/RadioButton';
+import { Avatar } from '@atoms/Avatar';
 import classNames from 'classnames';
 
 export const NanItem: React.FC<NanItemProps> = ({

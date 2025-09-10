@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import CheckBox from './CheckBox';
-import '../../../../storybookStyles.css';
+import '@/storybookStyles.css';
 
 const meta: Meta<typeof CheckBox> = {
     title: 'atoms/CheckBox',

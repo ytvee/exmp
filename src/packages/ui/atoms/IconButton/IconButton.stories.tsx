@@ -1,7 +1,7 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { IconButton } from './IconButton';
-import '../../../../storybookStyles.css';
+import '@/storybookStyles.css';
 
 const meta: Meta<typeof IconButton> = {
     component: IconButton,

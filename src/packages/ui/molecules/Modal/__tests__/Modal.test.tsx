@@ -3,13 +3,13 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import { vi } from 'vitest';
 import { Modal } from '../Modal';
 
-vi.mock('../../atoms/Icon', () => ({
+vi.mock('@atoms/Icon', () => ({
   Icon: ({ name, className, ...props }: { name: string; className?: string; [key: string]: unknown }) => (
     <span data-testid={`icon-${name}`} className={className} {...props} />
   ),
 }));
 
-vi.mock('../../atoms/Button', () => ({
+vi.mock('@atoms/Button', () => ({
   Button: ({ children, onClick, disabled, className, ...props }: { children: React.ReactNode; onClick?: () => void; disabled?: boolean; className?: string; [key: string]: unknown }) => (
     <button 
       onClick={onClick} 

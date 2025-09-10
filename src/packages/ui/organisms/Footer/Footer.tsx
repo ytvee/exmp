@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './Footer.module.css';
 import { FooterItem, FooterProps, FooterSubItem, ServiceItem } from './Footer.types';
-import useIsMobile from '../../../../utils/responsiveHooks/useIsMobile';
+import useIsMobile from '@utils/responsiveHooks/useIsMobile';
 import isUndefined from "lodash/isUndefined"
 
-import { DropDown, SelectOption } from '../../molecules/DropDown';
-import { Icon } from '../../atoms/Icon';
-import { Typography } from '../../atoms/Typography';
+import { DropDown, SelectOption } from '@molecules/DropDown';
+import { Icon } from '@atoms/Icon';
+import { Typography } from '@atoms/Typography';
 
 export const Footer: React.FC<FooterProps> = ({
   items = [],

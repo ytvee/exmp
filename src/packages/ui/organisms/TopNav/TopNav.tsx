@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import styles from './TopNav.module.css';
 import type { TopNavProps } from './TopNav.types';
-import NavLink from '../../molecules/NavLink/NavLink';
-import Icon from '../../atoms/Icon/Icon';
-import IconButton from '../../atoms/IconButton/IconButton';
-import Avatar from '../../atoms/Avatar/Avatar';
-import Button from '../../atoms/Button/Button';
-import SideBar from '../SideBar/SideBar';
-import type { SidebarSection } from '../SideBar/SideBar.types';
+import NavLink from '@molecules/NavLink/NavLink';
+import Icon from '@atoms/Icon/Icon';
+import IconButton from '@atoms/IconButton/IconButton';
+import Avatar from '@atoms/Avatar/Avatar';
+import Button from '@atoms/Button/Button';
+import SideBar from '@organisms/SideBar/SideBar';
+import type { SidebarSection } from '@organisms/SideBar/SideBar.types';
 
 export const TopNav: React.FC<TopNavProps> = ({
     disabled = false,

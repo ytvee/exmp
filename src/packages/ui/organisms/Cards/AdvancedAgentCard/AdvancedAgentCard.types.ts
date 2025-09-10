@@ -1,4 +1,4 @@
-import type { IconName } from '../../../atoms/Icon/Icon.types';
+import type { IconName } from '@atoms/Icon/Icon.types';
 
 export interface AgentStatusPill {
   iconName: IconName;

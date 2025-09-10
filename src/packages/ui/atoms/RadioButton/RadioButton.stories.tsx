@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import RadioButton from './RadioButton';
 import { action } from '@storybook/addon-actions';
-import '../../../../storybookStyles.css';
+import '@/storybookStyles.css';
 
 const meta: Meta<typeof RadioButton> = {
     title: 'atoms/RadioButton',

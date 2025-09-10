@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Filters } from './Filters';
 import type { FilterItem } from './Filters.types';
-import '../../../../storybookStyles.css';
+import '@/storybookStyles.css';
 
 const sampleFilters: FilterItem[] = [
   { id: '1', label: 'Red' },

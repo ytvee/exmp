@@ -1,6 +1,6 @@
 import React from 'react';
 import { ConfigAgentsCardProps } from './ConfigAgentsCard.types';
-import { Typography } from '../../../atoms/Typography';
+import { Typography } from '@atoms/Typography';
 import styles from './ConfigAgentsCard.module.css';
 import cn from 'classnames';
 

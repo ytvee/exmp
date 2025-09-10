@@ -11,7 +11,19 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "paths": {},
+    "paths": {
+      "@atoms/*": ["src/packages/ui/atoms/*"],
+      "@molecules/*": ["src/packages/ui/molecules/*"],
+      "@organisms/*": ["src/packages/ui/organisms/*"],
+      "@uiTypes/*": ["src/packages/ui/types/*"],
+      "@uiUtils/*": ["src/packages/utils/*"],
+      "@utils/*": ["src/utils/*"],
+      "@styles/*": ["src/styles/*"],
+      "@tokens/*": ["src/tokens/*"],
+      "@helpers/*": ["src/helpers/*"],
+      "@assets/*": ["src/assets/*"],
+      "@/*": ["src/*"]
+    },
     "types": ["vitest/globals", "@testing-library/jest-dom"]
   },
   "include": ["src"],

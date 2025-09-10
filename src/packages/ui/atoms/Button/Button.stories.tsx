@@ -2,7 +2,7 @@ import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from './Button';
 import { Icon } from '../Icon';
-import '../../../../storybookStyles.css';
+import '@/storybookStyles.css';
 
 const meta: Meta<typeof Button> = {
   title: 'atoms/Button',

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { NanItem } from './NanItem';
 import type { NanItemProps } from './NanItem.types';
-import '../../../../storybookStyles.css';
+import '@/storybookStyles.css';
 
 const meta: Meta<typeof NanItem> = {
   title: 'molecules/NanItem',

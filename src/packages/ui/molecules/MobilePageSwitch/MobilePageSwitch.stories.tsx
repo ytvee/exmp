@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { MobilePageSwitch } from './MobilePageSwitch';
-import '../../../../storybookStyles.css';
+import '@/storybookStyles.css';
 import React from 'react';
 
 const meta: Meta<typeof MobilePageSwitch> = {

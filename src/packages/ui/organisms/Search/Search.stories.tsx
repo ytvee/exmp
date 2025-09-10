@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Search } from './Search';
-import type { IconName } from '../../atoms/Icon/Icon.types';
+import type { IconName } from '@atoms/Icon/Icon.types';
 
 const meta: Meta<typeof Search> = {
   title: 'organisms/Search',

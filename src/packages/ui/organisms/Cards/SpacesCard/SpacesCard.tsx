@@ -1,12 +1,12 @@
 import React from 'react';
-import Button from '../../../atoms/Button/Button';
-import StatusChip from '../../../atoms/StatusChip/StatusChip';
+import Button from '@atoms/Button/Button';
+import StatusChip from '@atoms/StatusChip/StatusChip';
 import { SpacesCardBenefitProps, SpacesCardProps } from './SpacesCard.types';
-import { thousandsToKFormat } from '../../../../utils/helpers';
-import { Typography } from '../../../atoms/Typography';
-import { Author } from '../../../molecules/Author';
-import { Table } from '../../../atoms/Table';
-import { Icon } from '../../../atoms/Icon';
+import { thousandsToKFormat } from '@utils/helpers';
+import { Typography } from '@atoms/Typography';
+import { Author } from '@molecules/Author';
+import { Table } from '@atoms/Table';
+import { Icon } from '@atoms/Icon';
 import styles from './SpacesCard.module.css';
 import classNames from 'classnames';
 

@@ -2,8 +2,8 @@ import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { SpacesCard } from './SpacesCard';
 import type { SpacesCardProps, DataCardAuthor, SpacesCardBenefits } from './SpacesCard.types';
-import type { TableProps } from '../../../atoms/Table';
-import StatusChip from '../../../atoms/StatusChip/StatusChip';
+import type { TableProps } from '@atoms/Table';
+import StatusChip from '@atoms/StatusChip/StatusChip';
 
 const meta: Meta<typeof SpacesCard> = {
   title: 'organisms/Cards/SpacesCard',

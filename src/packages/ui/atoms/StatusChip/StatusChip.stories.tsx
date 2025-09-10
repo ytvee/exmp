@@ -1,7 +1,7 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { StatusChip } from './StatusChip';
-import '../../../../storybookStyles.css';
+import '@/storybookStyles.css';
 import { StatusType } from './StatusChip.types';
 
 const statuses: StatusType[] = ['active', 'rejected', 'pending', 'default', 'private']

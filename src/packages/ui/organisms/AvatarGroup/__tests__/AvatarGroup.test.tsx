@@ -4,7 +4,7 @@ import { vi } from 'vitest';
 import AvatarGroup from '../AvatarGroup';
 
 // Mock the Avatar component
-vi.mock('../../atoms/Avatar', () => ({
+vi.mock('@atoms/Avatar', () => ({
   Avatar: ({ src, alt }: { src: string; alt: string }) => (
     <img src={src} alt={alt} />
   ),

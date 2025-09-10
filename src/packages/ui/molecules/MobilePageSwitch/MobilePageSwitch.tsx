@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './MobilePageSwitch.module.css';
 import type { MobilePageSwitchProps } from './MobilePageSwitch.types';
-import { Icon } from '../../atoms/Icon';
+import { Icon } from '@atoms/Icon';
 
 export const MobilePageSwitch: React.FC<MobilePageSwitchProps> = ({
   onPageChange,

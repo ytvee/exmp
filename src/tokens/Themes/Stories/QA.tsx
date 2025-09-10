@@ -1,8 +1,8 @@
 import React from 'react';
-import { Screen } from '../../../helpers/Screen';
-import { SectionTitle } from '../../../helpers/SectionTitle';
-import { Content } from '../../../helpers/Content';
-import { Element } from '../../../helpers/Element';
+import { Screen } from '@helpers/Screen';
+import { SectionTitle } from '@helpers/SectionTitle';
+import { Content } from '@helpers/Content';
+import { Element } from '@helpers/Element';
 import { lightTheme, darkTheme } from '../Theme';
 import {
   ColorBlockWrapper,

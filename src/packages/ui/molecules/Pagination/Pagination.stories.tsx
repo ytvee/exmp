@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import type { Meta, StoryFn, StoryObj } from '@storybook/react';
 import { Pagination } from './Pagination';
 import type { PaginationProps } from './Pagination.types';
-import '../../../../storybookStyles.css';
+import '@/storybookStyles.css';
 
 const meta: Meta<typeof Pagination> = {
   title: 'molecules/Pagination',

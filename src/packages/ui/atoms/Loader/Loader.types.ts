@@ -1,4 +1,4 @@
-import { SizableComponentProps } from '../../types/BaseComponent.types';
+import { SizableComponentProps } from '@uiTypes/BaseComponent.types';
 
 export type LoaderSize = 'small' | 'large';
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import { PaginationProps } from './Pagination.types';
-import { IconButton } from '../../atoms/IconButton/IconButton';
+import { IconButton } from '@atoms/IconButton/IconButton';
 import styles from './Pagination.module.css';
-import { Icon } from '../../atoms/Icon';
-import { Button } from '../../atoms/Button';
+import { Icon } from '@atoms/Icon';
+import { Button } from '@atoms/Button';
 
 enum NavigationButtonVariants {
   BEFORE = "before",

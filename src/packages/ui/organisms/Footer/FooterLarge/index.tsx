@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Typography } from '../../../atoms/Typography';
-import { Button } from '../../../atoms/Button';
-import { InputField } from '../../../atoms/InputField';
+import { Typography } from '@atoms/Typography';
+import { Button } from '@atoms/Button';
+import { InputField } from '@atoms/InputField';
 import styles from './FooterLarge.module.css';
 
 interface FooterLargeProps {

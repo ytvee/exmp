@@ -1,8 +1,8 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { DropDown } from './DropDown';
-import { Icon } from '../../atoms/Icon';
-import { StatusChip } from '../../atoms/StatusChip';
+import { Icon } from '@atoms/Icon';
+import { StatusChip } from '@atoms/StatusChip';
 import { SelectOption } from './DropDown.types';
 
 const meta: Meta<typeof DropDown> = {

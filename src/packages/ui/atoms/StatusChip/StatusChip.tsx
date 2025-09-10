@@ -1,8 +1,8 @@
 import React from 'react';
 import { StatusChipProps } from './StatusChip.types';
-import { validateComponentProps } from '../../../utils/validation';
+import { validateComponentProps } from '@uiUtils/validation';
 import styles from './StatusChip.module.css';
-import { Icon } from '../Icon';
+import { Icon } from '@atoms/Icon';
 import classNames from 'classnames';
 
 export const StatusChip: React.FC<StatusChipProps> = ({

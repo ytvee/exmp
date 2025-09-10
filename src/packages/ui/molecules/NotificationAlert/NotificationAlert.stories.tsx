@@ -1,7 +1,7 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { NotificationAlert } from './NotificationAlert';
-import '../../../../storybookStyles.css';
+import '@/storybookStyles.css';
 
 const meta: Meta<typeof NotificationAlert> = {
   title: 'molecules/NotificationAlert',

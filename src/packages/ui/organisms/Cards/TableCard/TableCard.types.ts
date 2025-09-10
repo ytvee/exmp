@@ -1,5 +1,5 @@
-import { ButtonProps } from "../../../atoms/Button";
-import { TableProps } from "../../../atoms/Table";
+import { ButtonProps } from "@atoms/Button";
+import { TableProps } from "@atoms/Table";
 
 export type TMachineStatus = 'running' | 'pending' | 'stopped' | 'deployed';
 

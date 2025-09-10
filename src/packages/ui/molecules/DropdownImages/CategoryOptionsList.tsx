@@ -1,10 +1,10 @@
 import React, { useCallback, useState } from "react";
-import { InputField } from "../../atoms/InputField";
+import { InputField } from "@atoms/InputField";
 import { Option } from "./DropdownImages.types";
 import classNames from "classnames";
 import styles from './DropdownImages.module.css';
-import { Typography } from "../../atoms/Typography";
-import { Icon } from "../../atoms/Icon";
+import { Typography } from "@atoms/Typography";
+import { Icon } from "@atoms/Icon";
 
 export interface ICategoryList {
     options: Option[];

@@ -1,8 +1,8 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import ConfigAgentsCard from './ConfigAgentsCard';
-import Button from '../../../atoms/Button/Button';
-import Icon from '../../../atoms/Icon/Icon';
+import Button from '@atoms/Button/Button';
+import Icon from '@atoms/Icon/Icon';
 
 const meta: Meta<typeof ConfigAgentsCard> = {
   title: 'organisms/Cards/ConfigAgentsCard',

@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './Theme';
 import { Theme } from './Theme.type';
-import GlobalStyles from '../../globalstyles';
+import GlobalStyles from '@/globalstyles';
 
 interface ThemeContextType {
   theme: Theme;

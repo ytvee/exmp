@@ -1,5 +1,5 @@
 import React from 'react';
-import { lightTheme } from './../tokens/Themes/Theme';
+import { lightTheme } from '@tokens/Themes/Theme';
 export const Screen = (props: { children: React.ReactNode }) => {
   return (
     <div
