@@ -1,6 +1,6 @@
 import React from 'react';
 import { LoaderProps } from './Loader.types';
-import { validateComponentProps } from '../../../utils/validation';
+import { validateComponentProps } from '@uiUtils/validation';
 import styles from './Loader.module.css';
 import LoaderSvg from './Loader.svg?react';
 

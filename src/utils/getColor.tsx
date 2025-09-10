@@ -1,4 +1,4 @@
-import type { ColorPalette } from './../tokens/Themes/Theme.type';
+import type { ColorPalette } from '@tokens/Themes/Theme.type';
 
 export const getColor = (theme: { colors: ColorPalette }, color: string): string => {
   const keys = color.split('.');

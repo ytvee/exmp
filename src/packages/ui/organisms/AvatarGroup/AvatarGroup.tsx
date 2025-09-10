@@ -1,6 +1,6 @@
 import React from 'react';
 import { AvatarGroupProps } from './AvatarGroup.types';
-import { Avatar } from '../../atoms/Avatar';
+import { Avatar } from '@atoms/Avatar';
 import styles from './AvatarGroup.module.css';
 
 const AvatarGroup: React.FC<AvatarGroupProps> = ({ 

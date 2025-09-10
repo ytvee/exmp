@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { IconName } from '../../atoms/Icon/Icon.types';
+import { IconName } from '@atoms/Icon/Icon.types';
 
 export interface SidebarItemProps {
   avatarSrc?: string;

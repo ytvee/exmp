@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Modal } from './Modal';
-import { Button } from '../../atoms/Button';
-import { InputField } from '../../atoms/InputField';
-import { CheckBox } from '../../atoms/CheckBox';
-import { Icon } from '../../atoms/Icon';
-import '../../../../storybookStyles.css';
+import { Button } from '@atoms/Button';
+import { InputField } from '@atoms/InputField';
+import { CheckBox } from '@atoms/CheckBox';
+import { Icon } from '@atoms/Icon';
+import '@/storybookStyles.css';
 
 const meta: Meta<typeof Modal> = {
   title: 'molecules/Modal',

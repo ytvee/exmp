@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { DropdownImagesProps } from './DropdownImages.types';
 import styles from './DropdownImages.module.css';
 import classNames from 'classnames';
-import DropDown from '../DropDown/DropDown';
+import DropDown from '@molecules/DropDown/DropDown';
 import CategoryOptionsList from './CategoryOptionsList';
 
 export const DropdownImages: React.FC<DropdownImagesProps> = ({

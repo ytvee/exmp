@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './AdvancedAgentCard.module.css';
 import type { AdvancedAgentCardProps } from './AdvancedAgentCard.types';
-import { Avatar } from '../../../atoms/Avatar';
-import { Button } from '../../../atoms/Button';
-import { Typography } from '../../../atoms/Typography';
-import { Table } from '../../../atoms/Table';
-import { Icon } from '../../../atoms/Icon';
-import StatusChip from '../../../atoms/StatusChip/StatusChip';
+import { Avatar } from '@atoms/Avatar';
+import { Button } from '@atoms/Button';
+import { Typography } from '@atoms/Typography';
+import { Table } from '@atoms/Table';
+import { Icon } from '@atoms/Icon';
+import StatusChip from '@atoms/StatusChip/StatusChip';
 
 export const AdvancedAgentCard: React.FC<AdvancedAgentCardProps> = ({
   avatarSrc,

@@ -1,5 +1,5 @@
 import React from 'react';
-import Typography from '../tokens/Typography/Typography';
+import Typography from '@tokens/Typography/Typography';
 
 export const Element = (props: {
   children: React.ReactNode;

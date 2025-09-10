@@ -1,10 +1,10 @@
 import React from 'react';
 import Typography from '../Typography';
 
-import { Screen } from '../../../helpers/Screen';
-import { Element } from '../../../helpers/Element';
-import { Content } from '../../../helpers/Content';
-import { SectionTitle } from '../../../helpers/SectionTitle';
+import { Screen } from '@helpers/Screen';
+import { Element } from '@helpers/Element';
+import { Content } from '@helpers/Content';
+import { SectionTitle } from '@helpers/SectionTitle';
 
 export const QAStory = () => {
   return (

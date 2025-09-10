@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import type { Meta, StoryFn, StoryObj } from '@storybook/react';
 import { NavLink } from './NavLink';
-import { Icon } from '../../atoms/Icon';
+import { Icon } from '@atoms/Icon';
 import { NavLinkProps } from './NavLink.types';
 
 const meta: Meta<typeof NavLink> = {

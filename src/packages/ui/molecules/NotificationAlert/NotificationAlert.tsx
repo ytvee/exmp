@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './NotificationAlert.module.css';
 import { NotificationAlertProps } from './NotificationAlert.types';
-import { Icon as IconComponent } from '../../atoms/Icon';
+import { Icon as IconComponent } from '@atoms/Icon';
 
 export const NotificationAlert: React.FC<NotificationAlertProps> = ({
   variant = "info",

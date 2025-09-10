@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconName } from '../../atoms/Icon/Icon.types';
+import { IconName } from '@atoms/Icon/Icon.types';
 
 export type SelectSize = 'small' | 'medium' | 'large';
 

@@ -24,12 +24,13 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
-      '@atoms': resolve(__dirname, 'src/components/atoms'),
-      '@molecules': resolve(__dirname, 'src/components/molecules'),
-      '@organisms': resolve(__dirname, 'src/components/organisms'),
-      '@types': resolve(__dirname, 'src/types'),
-      '@componentsUtils': resolve(__dirname, 'src/components/utils'),
+      '@atoms': resolve(__dirname, 'src/packages/ui/atoms'),
+      '@molecules': resolve(__dirname, 'src/packages/ui/molecules'),
+      '@organisms': resolve(__dirname, 'src/packages/ui/organisms'),
+      '@uiTypes': resolve(__dirname, 'src/packages/ui/types'),
+      '@uiUtils': resolve(__dirname, 'src/packages/utils'),
       '@utils': resolve(__dirname, 'src/utils'),
+      '@styles': resolve(__dirname, 'src/styles'),
       '@tokens': resolve(__dirname, 'src/tokens'),
       '@helpers': resolve(__dirname, 'src/helpers'),
       '@assets': resolve(__dirname, 'src/assets'),

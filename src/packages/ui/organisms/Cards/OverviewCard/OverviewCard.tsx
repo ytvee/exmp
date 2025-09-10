@@ -1,10 +1,10 @@
 import React from 'react';
 import { OverviewCardProps } from "./OverviewCard.types";
 import styles from './OverviewCard.module.css';
-import { Icon } from '../../../atoms/Icon';
-import { Typography } from '../../../atoms/Typography';
-import { Button } from '../../../atoms/Button';
-import { lightTheme } from '../../../../../tokens/Themes/Theme';
+import { Icon } from '@atoms/Icon';
+import { Typography } from '@atoms/Typography';
+import { Button } from '@atoms/Button';
+import { lightTheme } from '@tokens/Themes/Theme';
 
 export const OverviewCard: React.FC<OverviewCardProps> = ({
     className,

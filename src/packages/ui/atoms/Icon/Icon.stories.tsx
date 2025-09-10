@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Icon } from './Icon';
 import { IconName, IconSize } from "./Icon.types";
-import '../../../../storybookStyles.css';
+import '@/storybookStyles.css';
 import classNames from 'classnames';
 
 export const ICON_NAMES: IconName[] = [

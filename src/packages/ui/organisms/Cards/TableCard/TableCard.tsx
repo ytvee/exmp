@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './TableCard.module.css';
 import { TMachineStatus, TableCardProps } from './TableCard.types';
-import { Author } from "../../../molecules/Author";
-import { Icon } from "../../../atoms/Icon";
-import StatusChip from "../../../atoms/StatusChip/StatusChip";
-import Button from "../../../atoms/Button/Button";
-import { Typography } from '../../../atoms/Typography';
-import { Avatar } from '../../../atoms/Avatar';
-import { StatusType } from '../../../atoms/StatusChip';
-import { Table } from '../../../atoms/Table';
+import { Author } from '@molecules/Author';
+import { Icon } from '@atoms/Icon';
+import StatusChip from '@atoms/StatusChip/StatusChip';
+import Button from '@atoms/Button/Button';
+import { Typography } from '@atoms/Typography';
+import { Avatar } from '@atoms/Avatar';
+import { StatusType } from '@atoms/StatusChip';
+import { Table } from '@atoms/Table';
 
 const machinStatuses: Record<TMachineStatus, { status: StatusType; label: string }> = {
     running: {

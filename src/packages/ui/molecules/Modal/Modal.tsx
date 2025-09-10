@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import styles from './Modal.module.css';
 import { ModalProps } from './Modal.types';
-import { Icon } from '../../atoms/Icon';
-import { Button } from '../../atoms/Button';
+import { Icon } from '@atoms/Icon';
+import { Button } from '@atoms/Button';
 
 export const Modal: React.FC<ModalProps> = ({
   isOpen,

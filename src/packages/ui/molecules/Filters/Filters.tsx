@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Filters.module.css';
-import Badge from '../../atoms/Badge/Badge';
+import Badge from '@atoms/Badge/Badge';
 import { FiltersProps } from './Filters.types';
-import { Icon } from '../../atoms/Icon';
+import { Icon } from '@atoms/Icon';
 
 export const Filters: React.FC<FiltersProps> = ({
   children,

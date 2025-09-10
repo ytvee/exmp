@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './DropDown.module.css';
 import { DropDownProps, SelectOption } from './DropDown.types';
-import { Icon } from '../../atoms/Icon';
+import { Icon } from '@atoms/Icon';
 import classNames from 'classnames';
-import { Typography } from '../../atoms/Typography';
-import '../../../../storybookStyles.css';
+import { Typography } from '@atoms/Typography';
+import '@/storybookStyles.css';
 
 export const DropDown: React.FC<DropDownProps> = ({
   options,

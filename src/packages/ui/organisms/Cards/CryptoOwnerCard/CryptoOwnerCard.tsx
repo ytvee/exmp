@@ -1,7 +1,7 @@
 import React from 'react';
 import { CryptoOwnerCardProps } from './CryptoOwnerCard.types';
-import { Avatar } from "../../../atoms/Avatar";
-import { Icon } from "../../../atoms/Icon";
+import { Avatar } from "@atoms/Avatar";
+import { Icon } from "@atoms/Icon";
 import styles from './CryptoOwnerCard.module.css';
 
 export const CryptoOwnerCard: React.FC<CryptoOwnerCardProps> = ({

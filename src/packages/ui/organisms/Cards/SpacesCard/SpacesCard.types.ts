@@ -1,5 +1,5 @@
-import { IconName } from "../../../atoms/Icon/Icon.types";
-import { TableProps } from "../../../atoms/Table";
+import { IconName } from "@atoms/Icon/Icon.types";
+import { TableProps } from "@atoms/Table";
 
 /**
  * Props for a single benefit line inside the DataCard

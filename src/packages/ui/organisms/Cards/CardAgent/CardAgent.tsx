@@ -1,10 +1,10 @@
 import React from 'react';
 import { CardAgentProps, Benefits } from './CardAgent.types';
 import styles from './CardAgent.module.css';
-import { Avatar } from '../../../atoms/Avatar';
-import { Icon } from '../../../atoms/Icon';
-import { IconName } from '../../../atoms/Icon/Icon.types';
-import { Author } from "../../../molecules/Author";
+import { Avatar } from '@atoms/Avatar';
+import { Icon } from '@atoms/Icon';
+import { IconName } from '@atoms/Icon/Icon.types';
+import { Author } from '@molecules/Author';
 
 type IconKeys =
     | 'comments'

@@ -2,7 +2,7 @@ import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { DropdownImages } from './DropdownImages';
 import { Option } from './DropdownImages.types';
-import { Icon } from '../../atoms/Icon';
+import { Icon } from '@atoms/Icon';
 
 const meta: Meta<typeof DropdownImages> = {
   title: 'molecules/DropdownImages',

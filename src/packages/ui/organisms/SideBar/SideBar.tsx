@@ -1,10 +1,10 @@
 import React, { useRef, useCallback } from 'react';
 import { SidebarProps, SidebarSection, SidebarItemProps } from './SideBar.types';
-import { NanItem } from '../../molecules/NanItem';
-import { Button } from '../../atoms/Button';
+import { NanItem } from '@molecules/NanItem';
+import { Button } from '@atoms/Button';
 import styles from './SideBar.module.css';
-import { Typography } from '../../atoms/Typography';
-import { Icon } from '../../atoms/Icon';
+import { Typography } from '@atoms/Typography';
+import { Icon } from '@atoms/Icon';
 import cn from 'classnames';
 
 export const SideBar: React.FC<SidebarProps> = ({

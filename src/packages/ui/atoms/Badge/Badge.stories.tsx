@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Badge } from './Badge';
 import { TBadgeSizes, TBadgeVariants, TIconPlacement } from './Badge.types';
 import Icon from '../Icon/Icon';
-import '../../../../storybookStyles.css';
+import '@/storybookStyles.css';
 
 const variants: TBadgeVariants[]  = ['blue', 'red', 'green', 'purple', 'gray'];
 const sizes: TBadgeSizes[] = ['small', 'medium', 'large'];

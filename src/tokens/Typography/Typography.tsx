@@ -2,8 +2,8 @@ import React from 'react';
 import { StyledTypography } from './Typography.styles';
 import type { TypographyProps } from './Typography.type';
 import { useTheme } from 'styled-components';
-import { getColor } from '../../utils/getColor';
-import { lightTheme } from '../Themes/Theme';
+import { getColor } from '@utils/getColor';
+import { lightTheme } from '@tokens/Themes/Theme';
 
 const Typography: React.FC<TypographyProps> = ({
   variant = 'body1',

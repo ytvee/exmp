@@ -3,7 +3,7 @@ import type { Meta, StoryFn, StoryObj } from '@storybook/react';
 import { Footer } from './Footer';
 import { FooterLarge } from './FooterLarge';
 import { FooterProps } from './Footer.types';
-import Icon from "../../atoms/Icon/Icon";
+import Icon from "@atoms/Icon/Icon";
 
 const serviceItems = [
   { icon: <Icon name='RadioButtonChecked' />, text: 'All services are online' },

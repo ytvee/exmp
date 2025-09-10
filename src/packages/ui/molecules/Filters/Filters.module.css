@@ -1,8 +1,8 @@
-@import '../../../../styles/tokens/colors.css';
-@import '../../../../styles/tokens/spacing.css';
-@import '../../../../styles/tokens/typography.css';
-@import '../../../../styles/semantic/theme-light.css';
-@import '../../../../styles/semantic/theme-dark.css';
+@import '@styles/tokens/colors.css';
+@import '@styles/tokens/spacing.css';
+@import '@styles/tokens/typography.css';
+@import '@styles/semantic/theme-light.css';
+@import '@styles/semantic/theme-dark.css';
 
 .asi-filters {
   display: flex;

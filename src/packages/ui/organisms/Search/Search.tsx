@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Search.module.css';
 import { SearchProps } from './Search.types';
-import Icon from '../../atoms/Icon/Icon';
-import type { IconName } from '../../atoms/Icon/Icon.types';
+import Icon from '@atoms/Icon/Icon';
+import type { IconName } from '@atoms/Icon/Icon.types';
 
 export const Search: React.FC<SearchProps> = ({
     className,

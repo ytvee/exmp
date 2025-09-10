@@ -4,7 +4,7 @@ import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { MobilePageSwitch } from '../MobilePageSwitch';
 
 // Mock the Icon component
-vi.mock('../../atoms/Icon', () => ({
+vi.mock('@atoms/Icon', () => ({
   Icon: ({ name, className, ...props }: { name: string; className?: string; [key: string]: unknown }) => (
     <span data-testid={`icon-${name}`} className={className} {...props} />
   ),

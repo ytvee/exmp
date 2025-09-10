@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Author.module.css';
 import { AuthorProps } from './Author.types';
-import { Avatar } from "../../atoms/Avatar";
-import { Icon } from "../../atoms/Icon";
+import { Avatar } from "@atoms/Avatar";
+import { Icon } from "@atoms/Icon";
 
 export const Author: React.FC<AuthorProps> = ({
     action,
